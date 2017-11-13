@@ -1,0 +1,30 @@
+.price{}
+.container--price{}
+.price__table{
+    border: 2px;
+    // border-style: solid;
+    border-color: #e5e5e5;
+    width: 100%;
+    height: 280px;
+    border-collapse: collapse;
+}
+
+price__row{
+
+}
+
+.price__cell{
+    border: 2px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+}
+.price_cell--name{
+  color: #283645;
+  font-family: $base-font;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
