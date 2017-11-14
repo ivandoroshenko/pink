@@ -17,39 +17,79 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="skew-test"></section>
     <section class="price"><!-- Prices -->
-        <div class="container container--price">
+        <div class="price__container">
             <table class="price__table">
-                <tr class="price__row">
-                    <th class="price__heading"></th>
-                    <th class="price__heading">База</th>
-                    <th class="price__heading">Cтандарт</th>
-                    <th class="price__heading">Анлим</th>
+                <tr>
+                    <th  rowspan="1" class="hidden"></th>
+                    <th class="price__heading">База <span>1,99 USD</span></th>
+                    <th class="price__heading standart">Cтандарт <span>3,99 USD</span></th>
+                    <th class="price__heading">Анлим <span>9,99 USD</span></th>
                 </tr>
-                <tr class="price__row">
-                    <th class="price__sub-heading"></th>
-                    <th class="price__sub-heading">1,99 USD</th>
-                    <th class="price__sub-heading">3,99 USD</th>
-                    <th class="price__sub-heading">9,99 USD</th>
+                <tr>
+                    
+                    <td class="price__name">Розовый фильтр</td>
+                    <td class="price__cell">
+                        <svg fill="#3dc644" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </td>
+                    <td class="price__cell">
+                        <svg fill="#3dc644" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </td>
+                    <td class="price__cell">
+                        <svg fill="#3dc644" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </td>
                 </tr>
-                <tr class="price__row">
-                    <td class="price__cell price__cell--name">Розовый фильтр</td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
+                <tr>
+                    <td class="price__name">Смайлики</td>
+                    <td class="price__cell price__cell--check">
+                        <svg fill="#f25b26" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </td>
+                    <td class="price__cell price__cell--check">
+                        <svg fill="#3dc644" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                         </svg>
+                    </td>
+                    <td class="price__cell price__cell--check">
+                        <svg fill="#3dc644" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </td>
                 </tr>
-                <tr class="price__row">
-                    <td class="price__cell price__cell--name">Смайлики</td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/no-svg.png" alt="No"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
-                </tr>
-                <tr class="price__row">
-                    <td class="price__cell price__cell--name">Комментарии</td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/no-svg.png" alt="No"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/no-svg.png" alt="No"></td>
-                    <td class="price__cell price__cell--check"><img src="../dist/img/icons/yes-svg.png" alt="Yes"></td>
+                <tr>
+                    <td class="price__name">Комментарии</td>
+                    <td class="price__cell price__cell--check">
+                        <svg fill="#f25b26" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </td>
+                    <td class="price__cell price__cell--check">
+                        <svg fill="#f25b26" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </td>
+                    <td class="price__cell">
+                        <svg fill="#3dc644"; height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </td>
                 </tr>
             </table>
         </div>
