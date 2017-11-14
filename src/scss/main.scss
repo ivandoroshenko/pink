@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet');
 @import "libs/normalize/normalize";
 @import "libs/fontawesome/font-awesome";
 @import "misc/_mixin.scss";
 @import "misc/_adjustment.scss";
+
+@import "layout/components/_btn-download.scss";
+@import "layout/components/_attachment-logo.scss";
+
+@import "misc/_vars.scss";
+
+@import "layout/_heder.scss";
+@import "layout/_intro.scss";
