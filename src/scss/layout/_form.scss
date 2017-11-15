@@ -1,0 +1,34 @@
+.form-preview {
+    background: url('../img/back-desktop.jpg')  center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 180px 0 100px 0;
+    position: relative;
+}
+
+.form-preview__title {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 3.125rem;
+    font-weight: 300;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-heder {
+    padding: 100px 0 75px 0;
+    
+}
+
+.form-desc {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 760px; 
+    color: #283645;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}

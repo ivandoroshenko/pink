@@ -3,11 +3,15 @@
 @import "libs/fontawesome/font-awesome";
 @import "misc/_mixin.scss";
 @import "misc/_adjustment.scss";
+@import "misc/_vars.scss";
 
 @import "layout/components/_btn-download.scss";
 @import "layout/components/_attachment-logo.scss";
+@import "layout/components/_social.scss";
 
-@import "misc/_vars.scss";
 
 @import "layout/_heder.scss";
 @import "layout/_intro.scss";
+@import "layout/_form.scss";
+@import "layout/_footer.scss";
+@import "misc/_responsive.scss";
