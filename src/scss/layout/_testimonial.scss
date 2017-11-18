@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+ 
+ body {
+ 	width: 100%;
+ }
+ .testimonial {
+ 	background: #fff;
+ }
+ .testimonial__container {
+	max-width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+.testimonial__flex-container {
+	display: flex;
+	justify-content: center;
+}	
+.testimonial__content {
+	margin-top: 70px;
+} 
+.testimonial__text {
+	text-align: center;
+	width: 680px;
+	margin: 50px 0 130px 0;
+}
+.testimonial__img {
+	padding: 33px 0 33px 0;
+	background: url('../img/quotes.png') center center no-repeat;
+    margin: auto;
+}   
+.testimonial__text-name {
+	display: flex;
+	justify-content: center;
+	font-family: $base-font;
+	font-weight: 700;
+	font-size: 24px;
+	color: #000;
+	margin: 40px 0 0 0;
+}
+.testimonial__text-bottom {
+	display: flex;
+	justify-content: center;
+	font-family: $base-font;
+	font-weight: 400;
+	font-size: 18px;
+	color: #283645;
+}
+.testimonial__text-main {
+    font-family: $base-font;
+	font-weight: 400;
+	font-size: 18px;
+	color: #283645;
+	line-height: 30px;
+}	
