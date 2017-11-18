@@ -1,3 +1,9 @@
+/*
+*
+* PHOTO-PREVIEW SECTION
+*
+*/
+
 .photo__preview{
     &-container{
         width: 100%;
@@ -26,30 +32,41 @@
     
     }
 }
+
+/*
+*
+* PHOTO-PANORAMA SECTION
+*
+*/
+
 .photo__panorama{
     background: #fff;
+   
+    
 }
-.photo__panorama-header{
-    padding: 100px 0;
-    margin: 0;
-}
+    .photo__panorama-header{
+        padding: 100px 0;
+        margin: 0;
+    }
 
-.photo__panorama__title{
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    color: #283645;
-    font-family: $base-font;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.875rem;
-    max-width: 568px;
-}
+    .photo__panorama__title{
+        padding: 0;
+        margin: 0 auto;
+        width: 590px;
+        text-align: center;
+        color: $text-color;
+        font-family: $base-font;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+        
+    }
 
 
-       .photo__panorama-slider{
+       .panorama-slider{
            width: 100%;
            position: relative;
+           
        }
         .photo__panorama-slide{
             width: 100%;
@@ -59,9 +76,9 @@
     text-decoration: none;
     position: absolute;
     top: 54px;
-    right: 130px;
-    padding: 13px 20px;
-    background: #d22856;
+    right: 170px;
+    padding: 6px 20px;
+    background: $pink-color;
     display: block;
     color: #fff;
     font-family: $base-font;
@@ -69,4 +86,215 @@
     font-weight: 700;
     line-height: 1.5rem;
     text-transform: uppercase;
+    
 }
+
+/*
+*
+* PHOTO-REWIEW SECTION
+*
+*/
+
+
+.photo__rewiew{
+    @include container;
+    background: $photo-rewiew-bg;
+    
+}
+    .rewiew{
+        color: $text-color;
+        font-size: 0.875rem;
+        width: 885px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+        .rewiew__name-and-date{
+            width: 720px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+            .time{
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 0.875rem;
+            }
+
+        .rewiew__like{
+            
+            color: $pink-color;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 0;
+            
+        }
+            .input--like{
+                display: none;
+            }
+
+            .lable__input--like{
+                padding-left: 20px;
+            }
+
+
+                .fa-heart-o{
+                    font-size: 14px;
+                    font-weight: 700;            
+                }
+
+        .rewiew__text{
+            margin: 10px 0 0 0;
+        }
+
+/*
+*
+* CUSTOMER-CARDS SECTION
+*
+*/
+
+
+.customers-cards{
+    @include container;    
+}
+
+    .customers-cards__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+        .customers-cards__item{
+            margin-top: 55px;
+        }
+
+            .customers-cards__link{
+                width: 300px;
+                display: inline-block;
+                text-decoration: none;
+                background: #f2f2f2;
+                padding-bottom: 30px;
+                
+            }
+
+                .rewiew__customers-cards{
+                    width: 232px;
+                    
+                    
+                }
+
+                    .rewiew__name-and-date--customers-cards{
+                        width: 100%;
+                        margin: 30px 0 0 0;
+                    }
+
+                    .rewiew__text-customers--cards{
+                        margin: 12px 0 0 0;
+                        line-height: 1.5rem;
+                    }
+
+                    .rewiew__like-customers--cards{
+                        margin: 24px 0 0 0;
+                    }
+
+
+/*
+*
+* UPLOAD SECTION
+*
+*/
+
+.upload{
+    @include container;
+}
+
+    .upload__title{
+       width: 418px;
+       padding: 70px 0;       
+    }
+
+   
+
+    .app--wrap{
+        background: $photo-rewiew-bg;
+        padding: 60px 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+        .tools-for-picture{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+            .crop{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #dddfe0;
+                padding-bottom: 13px;
+                width: 410px;
+                margin-bottom: 16px; 
+            }
+
+                .crop__slider{
+                    margin-left: 45px;
+                }
+
+
+                .crop__slider[type=range] {
+                    -webkit-appearance: none;
+                    width: 290px;
+                    border-radius: 8px;
+                    height: 2px;
+                    // border: 1px solid #bdc3c7;
+                    background-color: $text-color;
+                    outline: none;
+                } 
+
+                .crop__slider[type='range']::-webkit-slider-thumb {
+                    -webkit-appearance: none;                     
+                    border-radius: 10px;
+                    cursor: pointer;
+                    width: 15px;
+                    height: 15px;
+                    border: 2px solid $pink-color;
+                    background-color: #f2f2f2;
+                        
+                }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 135px;
+            }    
+
+                .tools__btn{
+                    background: none;
+                    border: 3px solid $pink-color;
+                    border-radius: 50px;
+                    padding: 16px 40px;
+                    width: 183px;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    color: $pink-color;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .tools__btn--opacity{
+                    border: 3px solid #dddfe0;                 
+                    color: #dddfe0;
+                }
+
+                
