@@ -14,12 +14,13 @@
         .header-content{
             @include flex;
             padding: 27px 0 42px 0;
-            
-            
         }
 
-        .logo {
-            width: 150px;
+        .logo-header--bg {
+            background: url('../img/logotype-white-desktop.png') center center no-repeat;
+            background-size: cover;
+            width: 147px;
+            height: 40px;
         }
 
         .header-nav {
@@ -91,6 +92,7 @@
     right: 40px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 }
 
 .label-nav:hover {

@@ -19,15 +19,31 @@
         }
         .label-nav {
             display: block;
+            z-index: 104;
+        }
+
+        .logo-header--bg {
+            background: url('../img/tablet-img/logotype-white-tablet-svg.svg') center center no-repeat;
+            background-size: cover;
+            width: 147px;
+            height: 40px;
+            position: relative;
+            z-index: 105;
         }
 
 
         /*responsive nav*/
+        .main-header  {
+            background: none;
+            
+        }
 
         .header-nav {
             width: 100%;
+            background: #283645;
+            padding-top: 109px;
             position: absolute;
-            top: 100%;
+            top: 0;
             left: 0;
             z-index: 100;
             transform: translateY(-200%);
@@ -57,7 +73,6 @@
             display: block;
             padding: 25px 0;
             text-transform: uppercase;
-            background: #283645;
             transition: border .2s ease-in-out,
                         color .2s ease-in-out;
         }
@@ -77,6 +92,32 @@
         .input-nav:checked ~  .main-header {
            display: none;
         }
+    .intro {
+        padding: 213px 0 110px 0; 
+    }
+    .intro-desr__title {
+        font-size: 2.5rem;
+        margin: 0 0 31px 0;
+    }
+    .btn-download {
+        margin: 0 0 52px 0;
+    }
+    .attachment {
+        margin: 0 auto 44px;
+    }
+    .intro-iphone {
+        width: 700px;
+        height: 545px;
+    }
+    .photo-iphone {
+        width: 195px;
+        height: 347px;
+        top: 53px;
+        right: 118px;
+    }
+    .main-footer {
+        padding: 35px 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -84,3 +125,24 @@
       width: 100%;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .container {
+      width: 100%;
+    }
+    .intro-iphone {
+        width: 320px;
+        height: 314px;
+    }
+    .photo-iphone {
+        width: 111px;
+        height: 197px;
+        top: 32px;
+        right: 27px;
+    }
+    .main-footer {
+        display: none;
+    }
+
+}
+

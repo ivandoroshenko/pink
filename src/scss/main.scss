@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet');
-<<<<<<< HEAD
-=======
-//font-family: 'Open Sans', sans-serif;
->>>>>>> 89bfd0923d320b32ad7c30123298fa3c5c90585b
 @import "libs/normalize/normalize";
 @import "libs/fontawesome/font-awesome";
 @import "misc/_mixin.scss";
 @import "misc/_adjustment.scss";
 @import "misc/_vars.scss";
 
-@import "layout/components/_btn-download.scss";
+@import "layout/components/_buttons.scss";
+@import "layout/components/_checkbox-radio.scss";
 @import "layout/components/_attachment-logo.scss";
 @import "layout/components/_social.scss";
 
