@@ -2,15 +2,20 @@
 @import "libs/normalize/normalize";
 @import "libs/fontawesome/font-awesome";
 @import "misc/_mixin.scss";
-@import "layout/_inform.scss";
 @import "misc/_adjustment.scss";
 @import "misc/_vars.scss";
+
 @import "layout/components/_buttons.scss";
 @import "layout/components/_checkbox-radio.scss";
 @import "layout/components/_attachment-logo.scss";
 @import "layout/components/_social.scss";
-@import "layout/_heder.scss";
+@import "layout/_header.scss"; 
+//corrected by Ivan from 'heder' to 'header'
 @import "layout/_intro.scss";
-@import "layout/_form.scss";
+@import "layout/_inform.scss";
+@import "layout/_contact.scss";
 @import "layout/_footer.scss";
+@import "layout/_form.scss";
 @import "misc/_responsive.scss";
+
+
