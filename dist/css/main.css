@@ -3317,6 +3317,131 @@ body {
     margin: 0;
     line-height: 1.5rem; } }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.diagram {
+  background: #f2f2f2; }
+
+.diagram__container {
+  max-width: 940px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto; }
+
+.diagram__flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.column-left {
+  width: 300px;
+  background: url("../img/clock.png") center center no-repeat; }
+
+.column-right {
+  width: 600px;
+  padding: 140px 0 115px 70px; }
+
+.diagram__desc-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000; }
+
+.about__desc-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #283645;
+  line-height: 30px;
+  margin-bottom: 40px; }
+
+.about__desc--link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #d22856; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.testimonial {
+  background: #fff; }
+
+.testimonial__container {
+  max-width: 940px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto; }
+
+.testimonial__flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.testimonial__content {
+  margin-top: 70px; }
+
+.testimonial__text {
+  text-align: center;
+  width: 680px;
+  margin: 50px 0 130px 0; }
+
+.testimonial__img {
+  padding: 33px 0 33px 0;
+  background: url("../img/quotes.png") center center no-repeat;
+  margin: auto; }
+
+.testimonial__text-name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin: 40px 0 0 0; }
+
+.testimonial__text-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #283645; }
+
+.testimonial__text-main {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #283645;
+  line-height: 30px; }
+
 .skew-test {
   height: 200px;
   background: #fff;
