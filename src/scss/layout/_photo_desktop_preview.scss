@@ -247,6 +247,11 @@
                 margin-bottom: 16px; 
             }
 
+                .upload__icons{
+                    width: 35px;
+                    height: 35px;                                  
+                }
+
                 .crop__slider{
                     margin-left: 45px;
                 }
@@ -295,6 +300,13 @@
                 .tools__btn--opacity{
                     border: 3px solid #dddfe0;                 
                     color: #dddfe0;
+                }
+
+
+                .icon__center{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 
