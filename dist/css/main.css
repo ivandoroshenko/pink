@@ -2746,23 +2746,15 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-<<<<<<< HEAD
-  flex-direction: column; }
-
-.maincontent {
-=======
   flex-direction: column;
   font-family: "Open Sans"; }
 
 .main-content {
->>>>>>> vice_master
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
-<<<<<<< HEAD
-=======
 .btn__link {
   padding: 14px 30px;
   border: 3px solid #fff;
@@ -4454,5 +4446,4 @@ textarea {
   .main-footer {
     display: none; } }
 
->>>>>>> vice_master
 /*# sourceMappingURL=main.css.map */
