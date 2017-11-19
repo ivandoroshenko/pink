@@ -3,19 +3,6 @@
     width: 940px;
     margin: 0 auto;
     // padding: 0 15px;
-
-    @media screen and (max-width:1210px){
-        width: 970px;
-
-    }
-
-    @media screen and (max-width:992px){
-        width: 750px;
-    }
-
-    @media screen and (max-width:768px){
-        width: auto;
-    }
 }
 
 @mixin size ($font){
