@@ -1,17 +1,11 @@
-.skew-test{
-    height: 200px;
-    background: #fff;
-    transform: skew(0deg, 5deg); 
-      margin: 0 auto;
-      z-index: 1;
-}
+
 .price{
     background: #f2f2f2;
    
 }
 .price__container{
     @include container;
-    padding: 65px 15px 95px 15px;
+    padding: 150px 15px 95px 15px;
     
 .price__table{
     border: 2px solid #e5e5e5;
