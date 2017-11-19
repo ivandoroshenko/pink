@@ -3618,9 +3618,16 @@ body {
   text-decoration: none;
   margin: 30px auto 0 auto; }
 
-.map {
-  margin: 0 auto;
-  display: block; }
+.iframe-overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 750px;
+  /* your iframe height */
+  top: 750px;
+  /* your iframe height */
+  margin-top: -750px;
+  /* your iframe height */ }
 
 .logo-footer--bg {
   background: url("../img/tablet-img/logotype-blue-tablet-svg.svg") center center no-repeat;
@@ -3675,6 +3682,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+.fa-play {
+  margin-left: 3px; }
 
 .developed {
   width: 155px;
