@@ -6,13 +6,27 @@
  	width: 100%;
  }
  .testimonial {
- 	background: #fff;
+	background: #fff;
+	position: relative;
+	 &:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100px;
+			left: 0;
+			bottom: -50px;
+			transform: skew(0deg, -4deg); 
+			background: #fff;
+			z-index: 99;
+       
+	}
  }
  .testimonial__container {
 	max-width: 940px;
-	padding: 0 15px;
-    position: relative;
+	position: relative;
 	margin: 0 auto;
+
+	
 }
 .testimonial__flex-container {
 	display: flex;
@@ -55,3 +69,4 @@
 	color: #283645;
 	line-height: 30px;
 }	
+
