@@ -37,6 +37,10 @@
     }
 
 
+    label{  //cursor pointer всем лейблам
+        cursor: pointer;
+    }
+
 // отступ и текст заголовкам в рамочках
 
     legend {
@@ -48,13 +52,14 @@
     .input-size {  
         outline-color: $colorAccent;
         padding: 0 0 0 20px;
-        width: 76%;
+        width: 76%;              // проверить значение
         height: 59px;
         border: none;
         border: 2px solid #e5e5e5;
         transition: border .2s ease-in-out;
             &:hover{border-color: $colorHover;}
     }
+
     .input-size:active{
         border: 2px solid $colorAccent;
     }
@@ -63,22 +68,10 @@
             margin: 0 20px 0 0;
         }
 
-    .achievements {
-        margin: -23.5px -60px 0 0;
-    }
-
-    .input-achievements{
-        position: relative;
-        margin: 23.5px 0;
-    }
-
-    .label-achievements{
-        padding-left: 60px;
-    }
-
+    
 /***
 *
-*form__personal-info
+* FORM PERSONAL
 *
 ***/
 
@@ -86,7 +79,14 @@
    @include flex; 
    margin-bottom: 60px;   //нижний отступ секции персон.данных
 }
-    .form-name {
+
+.name,
+.fullname,
+.middlename {
+    @include flex; 
+}
+
+    .left-column {
         width: 50%;
         padding: 0 35px 0 0; 
     }
@@ -96,18 +96,14 @@
         margin: 0 0 55px 0; // отступ между имя и фамилия инпутами
     }
 
-    .name {
-        @include flex; 
-    } 
-
-
+    
 /***
 *
 * ATTACHMENT FORM
 *
 ***/
 
-.attachment-form {
+.right-column {
     width: 50%;
     padding: 0 0 0 35px;
 }
@@ -150,74 +146,90 @@
 .email {
     @include flexColumn;
     align-items: stretch;
-    position: relative;
 }
 
 .tel,
 .mail {
-    border: none;
+    position: relative;
     background: none;
     width: 100%;
     height: 100%;
     
 }
+
 .label-phone,
 .label-email {
     margin: 0 0 0 20px;
 }
+
 .input-tel,
 .input-email {
-    width: 370px;
-    height: 59px;
     position: relative;
-    border: 2px solid #e5e5e5;
+    width: 100%;
+    height: 59px;
     margin-bottom: 20px;
         &:hover{border-color: $colorHover;}
 }
 
-.input-tel::before {
-    content: '';
-    position: absolute;
-    background: url('../img/icon/phone.png') right center no-repeat;
-    background-size: cover; 
-    width: 55px;
-    height: 55px;
-    top: 0;
-    right: 0;
-}
-.input-email::before {
-    content: '';
-    position: absolute;
-    background: url('../img/icon/email.png') right center no-repeat;
-    background-size: cover; 
-    width: 55px;
-    height: 55px;
-    top: 0;
-    right: 0;
-}
+    .input-tel::before {
+        content: '';
+        position: absolute;
+        background: url('../img/icon/phone.png') right center no-repeat;
+        background-size: cover; 
+        width: 57px;
+        height: 57px;
+        top: 0;
+        right: 0;
+    }
+    .input-email::before {
+        content: '';
+        position: absolute;
+        background: url('../img/icon/email.png') right center no-repeat;
+        background-size: cover; 
+        width: 57px;
+        height: 57px;
+        top: 0;
+        right: 0;
+    }
 
 /***
 *
 * ACHIVEMENTS FORM
 *
 ***/
+
 .achievements-form {
     margin-bottom: 60px;
 }
 
-.achievements {
-    @include flex; 
-    flex-flow: row wrap;
-    align-content: space-between;
-    padding: 40px 60px 60px 60px;
-}
-.input-achievements {
-    height: 40px;
-    width: 260px;
-}
-.input-achievements>label {
-    @include textDefolt;
-}
+    .achievements {
+        margin: -23.5px -60px 0 0;
+    }
+
+    .input-achievements{
+        position: relative;
+        margin: 23.5px 0;
+    }
+
+    .label-achievements{
+        padding-left: 60px;
+    }
+    
+    .achievements {
+        @include flex; 
+        flex-flow: row wrap;
+        align-content: space-between;
+        padding: 40px 60px 60px 60px;
+    }
+
+    .input-achievements {
+        height: 40px;
+        width: 260px;
+    }
+
+    .input-achievements>label {
+        @include textDefolt;
+    }
 
 /***
 *
@@ -226,6 +238,8 @@
 ***/
 
 textarea {
+    width: 100%;
+    height: 125px;
     outline-color: $colorAccent;
     border: none;
     border: 2px solid #e5e5e5;
@@ -237,17 +251,24 @@ textarea {
 .emotions-form {
     margin-bottom: 70px;
 }
+
 .emotions {
     padding: 30px 60px 45px 60px;
 }
-textarea {
-    width: 100%;
-    height: 125px;
-}
+
+/***
+*
+* SUBMIT FORM
+*
+****/
+
 .submit {
     @include flex;
-    &>p>span{
+    &>p>.attention{
        color: $colorAccent; 
+    }
+    .attention-text {
+        margin: 0;
     }
 }
 
