@@ -2972,6 +2972,10 @@ body {
   align-items: center;
   padding: 27px 0 42px 0; }
 
+.logo-header {
+  position: relative;
+  top: -8px; }
+
 .logo-header--bg {
   background: url("../img/logotype-white-desktop.png") center center no-repeat;
   background-size: cover;
@@ -3603,6 +3607,10 @@ body {
   /* your iframe height */
   margin-top: -750px;
   /* your iframe height */ }
+
+.logo-footer {
+  position: relative;
+  top: -8px; }
 
 .logo-footer--bg {
   background: url("../img/tablet-img/logotype-blue-tablet-svg.svg") center center no-repeat;
@@ -4422,6 +4430,8 @@ textarea {
     display: block;
     z-index: 104; }
   /*logo*/
+  .logo-header, .logo-footer {
+    position: static; }
   .logo-header--bg {
     background: url("../img/tablet-img/logotype-white-tablet-svg.svg") center center no-repeat;
     background-size: cover;
