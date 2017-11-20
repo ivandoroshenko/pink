@@ -16,8 +16,7 @@
             padding: 27px 0 42px 0;
         }
         .logo-header{
-            position: relative; //for centering header
-            top: -5px;
+            @include center-logo;
         }
         .logo-header--bg {
             background: url('../img/logotype-white-desktop.png') center center no-repeat;

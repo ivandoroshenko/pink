@@ -2974,7 +2974,7 @@ body {
 
 .logo-header {
   position: relative;
-  top: -5px; }
+  top: -8px; }
 
 .logo-header--bg {
   background: url("../img/logotype-white-desktop.png") center center no-repeat;
@@ -3607,6 +3607,10 @@ body {
   /* your iframe height */
   margin-top: -750px;
   /* your iframe height */ }
+
+.logo-footer {
+  position: relative;
+  top: -8px; }
 
 .logo-footer--bg {
   background: url("../img/tablet-img/logotype-blue-tablet-svg.svg") center center no-repeat;
@@ -4426,6 +4430,8 @@ textarea {
     display: block;
     z-index: 104; }
   /*logo*/
+  .logo-header, .logo-footer {
+    position: static; }
   .logo-header--bg {
     background: url("../img/tablet-img/logotype-white-tablet-svg.svg") center center no-repeat;
     background-size: cover;
@@ -4441,12 +4447,6 @@ textarea {
   /*responsive nav*/
   .main-header {
     background: none; }
-  /* center for header */
-  .logo-header {
-    position: static; }
-  .nav__list {
-    margin: 0; }
-  /* ./center for header */
   .nav__item::before {
     height: 0; }
   .header-nav {

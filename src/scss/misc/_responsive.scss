@@ -99,6 +99,9 @@
     }
 
     /*logo*/
+    .logo-header, .logo-footer{
+            position: static;
+        }
     .logo-header--bg {
         background: url('../img/tablet-img/logotype-white-tablet-svg.svg') center center no-repeat;
         background-size: cover;
@@ -119,14 +122,7 @@
     .main-header  {
         background: none;
     }
-    /* center for header */
-    .logo-header{
-    position: static;
-    }
-    .nav__list{
-        margin: 0;
-    }
-    /* ./center for header */
+    
     .nav__item::before {
         height: 0;
     }
