@@ -15,7 +15,10 @@
             @include flex;
             padding: 27px 0 42px 0;
         }
-
+        .logo-header{
+            position: relative; //for centering header
+            top: -5px;
+        }
         .logo-header--bg {
             background: url('../img/logotype-white-desktop.png') center center no-repeat;
             background-size: cover;
@@ -29,7 +32,7 @@
 
             .nav__list {
                 padding: 0;
-                margin: 0;
+                margin: 5px 0 0 0; //for centering header
                 list-style: none;
                 @include flex;
             }

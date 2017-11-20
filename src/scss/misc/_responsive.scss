@@ -40,7 +40,7 @@
     .header-nav {
         width: 535px;
     }
-
+    
     .nav__item {
         position: relative;
         margin-right: 50px;
@@ -119,7 +119,14 @@
     .main-header  {
         background: none;
     }
-
+    /* center for header */
+    .logo-header{
+    position: static;
+    }
+    .nav__list{
+        margin: 0;
+    }
+    /* ./center for header */
     .nav__item::before {
         height: 0;
     }
