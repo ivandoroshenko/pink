@@ -464,6 +464,116 @@
     .btn__link {
         font-size: 1.125rem;
     }
+
+    /***
+    *
+    * FORM PERSONAL
+    *
+    ***/
+
+    .name,
+    .fullname,
+    .middlename {
+        @include flexColumn; 
+        align-items: stretch;
+        width: 100%; 
+    }
+
+    .form-name {
+        padding: 0 20px;
+        margin-bottom: 45px;
+    }
+    .input-size {
+        width: 100%;
+    }
+
+    .fullname-label {
+        padding-left: 20px; 
+    }
+
+    /***
+    *
+    * ATTACHMENT FORM
+    *
+    ***/
+
+    .attachment-form {
+        background: #f2f2f2;
+        padding: 40px 0 45px 0;
+    }
+    .input-attachment__wrap {
+        padding: 40px 0 55px 20px;
+    }
+
+    /***
+    *
+    * CONTACTS INFO
+    *
+    ***/
+
+    .dellete-legend {
+        display:none; 
+    }
+    .contacts {
+        padding:0 20px;
+    }
+
+    .input-tel::before,
+    .input-email::before {
+        display: none;
+    }
+    .label-phone,
+    .label-email {
+        order: -1;
+    }
+
+
+    /***
+    *
+    * ACHIVEMENTS FORM
+    *
+    ***/
+
+    .achievements-form {
+        background: #f2f2f2;
+        padding: 40px 0 45px 0;
+        margin: 0;
+    }
+    .achievements {
+        padding: 0 20px;
+    }
+    
+
+    /***
+    *
+    * EMOTION FORM
+    *
+    ***/
+
+    .emotions-form {
+        margin: 60px 20px 51px 20px;
+    }
+
+    fieldset {
+       border: none;
+    }
+
+    .emotions {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .attachment-form {
+        order: 5;
+    }
+    textarea {
+        height: 197px;
+    }
+
+    .submit-button {
+        padding: 22.5px 45px;
+    }
+}
 }
 
 
@@ -576,112 +686,4 @@
 
           
 }
-    /***
-    *
-    * FORM PERSONAL
-    *
-    ***/
-
-    .name,
-    .fullname,
-    .middlename {
-        @include flexColumn; 
-        align-items: stretch;
-        width: 100%; 
-    }
-
-    .form-name {
-        padding: 0 20px;
-        margin-bottom: 45px;
-    }
-    .input-size {
-        width: 100%;
-    }
-
-    .fullname-label {
-        padding-left: 20px; 
-    }
-
-    /***
-    *
-    * ATTACHMENT FORM
-    *
-    ***/
-
-    .attachment-form {
-        background: #f2f2f2;
-        padding: 40px 0 45px 0;
-    }
-    .input-attachment__wrap {
-        padding: 40px 0 55px 20px;
-    }
-
-    /***
-    *
-    * CONTACTS INFO
-    *
-    ***/
-
-    .dellete-legend {
-        display:none; 
-    }
-    .contacts {
-        padding:0 20px;
-    }
-
-    .input-tel::before,
-    .input-email::before {
-        display: none;
-    }
-    .label-phone,
-    .label-email {
-        order: -1;
-    }
-
-
-    /***
-    *
-    * ACHIVEMENTS FORM
-    *
-    ***/
-
-    .achievements-form {
-        background: #f2f2f2;
-        padding: 40px 0 45px 0;
-        margin: 0;
-    }
-    .achievements {
-        padding: 0 20px;
-    }
     
-
-    /***
-    *
-    * EMOTION FORM
-    *
-    ***/
-
-    .emotions-form {
-        margin: 60px 20px 51px 20px;
-    }
-
-    fieldset {
-       border: none;
-    }
-
-    .emotions {
-        padding: 0;
-        margin-top: 20px;
-    }
-
-    .attachment-form {
-        order: 5;
-    }
-    textarea {
-        height: 197px;
-    }
-
-    .submit-button {
-        padding: 22.5px 45px;
-    }
-}
