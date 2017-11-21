@@ -1,29 +1,49 @@
-/*
- @media screen and (max-width: 1220px) {
-    .container {
-      width: 992px;
-    }
-}
-@media screen and (max-width:1210px){
-    * {
-        width: 970px;
-    }
+/***1. SCREEN 1102px
 
-}
-@media screen and (max-width:992px){
-    * {
-        width: 750px;
-    }
-}
+    1.1. HEADER NAVIGATION
+    1.2. FORM PAGE
 
-@media screen and (max-width:768px){
-    * {
-        width: auto;
-    }
-}
-*/
+2. SCREEN 890px
 
-/***=== SCREEN 1102px ===***/
+    2.1. INTRO
+
+3. SCREEN 760px
+
+3.1  LOGO
+    3.2  RESPONSIVE NAVIGATION
+    3.3  INTRO
+    3.4  ACHIVEMENTS FORM
+    3.5  FOOTER
+    3.6  FORM PAGE
+    3.7  personal form
+    3.8  contacts form
+    3.9  ACHIVEMENTS FORM
+    3.10 SUBMIT FORM
+
+4. SCREEN 600px
+
+    4.1. SUBMIT FORM
+    4.2. FOOTER HOME PAGE
+    4.3. FOOTER FORM PAGE
+
+5. screen 410px
+
+6. FORM HEADER
+    6.1. INTRO
+    6.2. FORM PERSONAL
+    6.3. ATTACHMENT FORM
+    6.4. CONTACTS INFO
+    6.5. ACHIVEMENTS FORM
+    6.6. EMOTION FORM
+
+7 responsive for photo page
+    7.1. photo page responsive tablet
+    7.2. photo__rewiew section responsive tablet
+    7.3. photo/customer__card section responsive tablet
+    7.4. photo/upload section responsive tablet
+    7.5. photoupload section responsive tablet
+    ***/
+/***=== 1. SCREEN 1102px ===***/
 
 @media screen and (max-width: 1102px) {
 
@@ -33,7 +53,7 @@
 
     /***
     *
-    * HEADER NAVIGATION
+    * 1.1. HEADER NAVIGATION
     *
     ***/
 
@@ -49,7 +69,11 @@
             margin-right: 0px;
         }
     }
-
+   /***
+    *
+    * 1.2 FORM PAGE
+    *
+    ***/
     .form-preview__title {
         max-width: 650px;
     }
@@ -72,8 +96,11 @@
             margin: -23.5px 0;
         }
 }
-
+/***=== 2. SCREEN 890px ===***/
 @media screen and (max-width: 890px) {
+    /*
+    2.1. INTRO
+    */
     .intro-iphone {
         width: 900px;
     }
@@ -83,14 +110,15 @@
     }
 }
 
-/***=== SCREEN 710px ===***/
+/***===
+3. SCREEN 760px
+===***/
 
 @media screen and (max-width: 760px) {
 
     .container{
         width: 620px;
         padding: 0 15px;
-
     }
 
     .label-nav {
@@ -98,7 +126,9 @@
         z-index: 104;
     }
 
-    /*logo*/
+    /*
+    3.1  LOGO
+    */
     .logo-header, .logo-footer{
             position: static;
         }
@@ -113,11 +143,9 @@
 
     /***
     *
-    * RESPONSIVE NAVIGATION
+    * 3.2 RESPONSIVE NAVIGATION
     *
     ***/
-
-    /*responsive nav*/
 
     .main-header  {
         background: none;
@@ -186,7 +214,7 @@
 
     /***
     *
-    * INTRO
+    * 3.3. INTRO
     *
     ***/
 
@@ -221,7 +249,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.4. ACHIVEMENTS FORM
     *
     ***/
 
@@ -242,7 +270,7 @@
 
     /***
     *
-    * FOOTER
+    * 3.5. FOOTER
     *
     ***/
 
@@ -252,7 +280,7 @@
 
     /***
     *
-    * FORM PAGE
+    * 3.6 FORM PAGE
     *
     ***/
 
@@ -264,7 +292,9 @@
         width: 490px;
     }
 
-    /*personal form*/
+    /*
+    3.7. personal form
+    */
 
     .form__personal-info {
         @include flexColumn;
@@ -277,7 +307,9 @@
         margin-bottom: 60px;
     }
 
-    /*contacts form*/
+    /*
+    3.8. contacts form
+    */
 
     .contacts, {
         @include flexColumn;
@@ -299,7 +331,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.9. ACHIVEMENTS FORM
     *
     ***/
 
@@ -310,7 +342,7 @@
 
     /***
     *
-    * SUBMIT FORM
+    * 3.10 SUBMIT FORM
     *
     ****/
 
@@ -320,7 +352,9 @@
 
 }
 
-/***=== SCREEN 600px ===***/
+/***===
+4. SCREEN 600px
+ ===***/
 
 @media screen and (max-width: 655px) {
 
@@ -340,7 +374,7 @@
 
     /***
     *
-    * SUBMIT FORM
+    * 4.1. SUBMIT FORM
     *
     ****/
 
@@ -350,7 +384,7 @@
 
     /****
     *
-    * FOOTER HOM PAGE
+    * 4.2. FOOTER HOME PAGE
     *
     ***/
 
@@ -364,7 +398,7 @@
 
     /***
     *
-    * FOOTER FORM PAGE
+    * 4.3. FOOTER FORM PAGE
     *
     ***/
 
@@ -382,7 +416,9 @@
     }
 
 }
-
+/***
+5. SCREEN 410px
+***/
 @media screen and (max-width: 410px) {
     .container {
       width: 100%;
@@ -391,7 +427,7 @@
 
     /***
     *
-    * FORM HEADER
+    *5.1. FORM HEADER
     *
     ***/
 
@@ -417,7 +453,7 @@
 
     /***
     *
-    * INTRO
+    *5.2. INTRO
     *
     ***/
 
@@ -470,8 +506,8 @@
     }
 
     /***
-    *S
-    * FORM PERSONAL
+    *
+    * 5.3. FORM PERSONAL
     *
     ***/
 
@@ -497,7 +533,7 @@
 
     /***
     *
-    * ATTACHMENT FORM
+    * 5.4. ATTACHMENT FORM
     *
     ***/
 
@@ -511,7 +547,7 @@
 
     /***
     *
-    * CONTACTS INFO
+    * 5.5. CONTACTS INFO
     *
     ***/
 
@@ -534,7 +570,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 5.6. ACHIVEMENTS FORM
     *
     ***/
 
@@ -550,7 +586,7 @@
 
     /***
     *
-    * EMOTION FORM
+    * 5.7. EMOTION FORM
     *
     ***/
 
@@ -583,20 +619,28 @@
 
 
 
-/* responsive for photo page */
+/*
+7. responsive for photo page
+ */
 
 
- /* photo page responsive tablet */
+ /* 7.1.
+  photo page responsive tablet
+ */
 
 @media screen and (max-width: 700px) {
 
-    /* photo__panorama section responsive tablet */
+  /* 7.2.
+  photo__panorama section responsive tablet
+   */
 
     .photo__panorama-btn {
         right: 100px;
     }
 
-    /* photo__rewiew section responsive tablet */
+    /*
+    7.4. photo__rewiew section responsive tablet
+    */
 
     .rewiew{
         width: 570px;
@@ -607,7 +651,8 @@
         }
 
 
-    /* photo/customer__card section responsive tablet */
+    /*7.5. photo/customer__card section responsive tablet
+     */
 
     .customers-cards__item{
         margin-top: 30px;
@@ -633,7 +678,9 @@
             }
 
 
-    /* photo/upload section responsive tablet */
+    /* 7.6.
+    photo/upload section responsive tablet
+     */
 
     .upload{
         width: 100%;
