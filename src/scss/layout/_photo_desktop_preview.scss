@@ -146,53 +146,39 @@
                 z-index: 99;
             }   
 
-                .fa-heart-o{
-                    font-size: 14px;
-                    font-weight: 700;   
-                    position: relative;
-                    z-index: 99;               
-                }
-
-                .fa-heart{
-                    /* color: $photo-rewiew-bg; */ 
-                    display: none;                   
-                    color: $colorAccent; 
-                    position: absolute;
-                    left: 0;
-                    top: 0;                                      
-                    margin: 0 auto;
-                    font-size: 14px;
-                    z-index: 99;
-                    
-                }
-
-                .input--like1:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
-                }
-
-                .input--like2:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+                .favorite{
+                    stroke-width: 3px;
+                    stroke: $colorAccent;
+                    fill: #f2f2f2;
                 }
                 
-                .input--like3:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+                .like__svg:active>.favorite{
+                    fill: $colorAccent;
                 }
 
-                .input--like4:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+
+                .input--like1:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
                 }
-                .input--like5:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+                .input--like2:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like3:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
                 }
 
-                .input--like6:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+                .input--like4:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
                 }
-
-                .input--like7:checked + .lable__input--like > .fa-heart-o > .fa-heart{
-                    display: block;
+                .input--like5:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
                 }
-
+                .input--like6:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like7:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
            
         .rewiew__text{
             margin: 10px 0 0 0;
@@ -383,5 +369,13 @@
                     justify-content: center;
                     align-items: center;
                 }
+
+
+
+
+
+                
+                    
+
 
                 
