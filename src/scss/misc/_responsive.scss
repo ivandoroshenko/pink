@@ -108,6 +108,109 @@
     .photo-iphone {
         right: 175px;
     }
+
+
+
+
+
+/***
+* 2.3. DIAGRAM
+***/
+    .diagram__container{
+        width: 700px;
+        padding: 50px 40px;
+    }
+    .diagram__flex-container{
+        justify-content: space-between;
+    .column-left{
+        width: 240px;
+        background-size: 240px 280px;
+        flex-shrink: 0;
+    }
+    .column-right {
+        padding: 50px 0 80px 0;
+        margin-left: 70px / 700px * 100%;
+    }
+    .diagram__desc-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.875rem;
+        max-width: 177px;
+        line-height: 2.25rem;
+    }
+}
+    .about__desc-text{
+        max-width: 295px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    .about__desc--link{
+        display: block;
+        margin-top: 20px;
+        font-size: 0.875rem;
+    }
+    /***
+    * 2.4. TESTIMONIAL
+    ***/
+
+    .testimonial__container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 140px;
+    }
+    .testimonial__img{
+        display: none;
+    }
+    .testimonial__desc{
+        margin: 0 auto;
+    }
+
+    .testimonial__sub-title{
+        margin-top: 10px;
+    }
+}
+
+/***
+* 2.5. PRICE
+***/
+.price__container{
+    padding: 56px 0 70px;
+    td.price__name{
+    font-size: 0.875rem;
+}
+}
+
+.price__heading{
+    font-size: 1rem;
+    span{
+       font-size: 1.125rem;
+    }
+}
+
+/***
+*2.6. CONTACTS
+***/
+.contact__title{
+    margin-top: 55px;
+    font-size: 2.5rem;
+}
+.contact__list{
+    max-width: 700px;
+    justify-content: center;
+}
+
+.contact__item{
+    margin: 50px 40px;
+    width: 240px;
+}
+
+.contact__item--last{
+    order: 3;
+}
+.contact__item--data{
+    margin-top: 10px;
 }
 
 /***===

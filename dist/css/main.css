@@ -3386,7 +3386,7 @@ body {
   width: 100%; }
 
 .diagram {
-  background: #f2f2f2; }
+  background: #fff; }
 
 .diagram__container {
   max-width: 940px;
@@ -4574,7 +4574,96 @@ textarea {
   .intro-iphone {
     width: 900px; }
   .photo-iphone {
-    right: 175px; } }
+    right: 175px; }
+  /***
+* 2.3. DIAGRAM
+***/
+  .diagram__container {
+    width: 700px;
+    padding: 50px 40px; }
+  .diagram__flex-container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .diagram__flex-container .column-left {
+      width: 240px;
+      background-size: 240px 280px;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+    .diagram__flex-container .column-right {
+      padding: 50px 0 80px 0;
+      margin-left: 10%; }
+    .diagram__flex-container .diagram__desc-title {
+      margin: 0;
+      padding: 0;
+      font-size: 1.875rem;
+      max-width: 177px;
+      line-height: 2.25rem; }
+  .about__desc-text {
+    max-width: 295px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    font-size: 0.875rem;
+    line-height: 1.5rem; }
+  .about__desc--link {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.875rem; }
+  /***
+    * 2.4. TESTIMONIAL
+    ***/
+  .testimonial__container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 140px; }
+  .testimonial__img {
+    display: none; }
+  .testimonial__desc {
+    margin: 0 auto; }
+  .testimonial__sub-title {
+    margin-top: 10px; } }
+
+/***
+* 2.5. PRICE
+***/
+.price__container {
+  padding: 56px 0 70px; }
+  .price__container td.price__name {
+    font-size: 0.875rem; }
+
+.price__heading {
+  font-size: 1rem; }
+  .price__heading span {
+    font-size: 1.125rem; }
+
+/***
+*2.6. CONTACTS
+***/
+.contact__title {
+  margin-top: 55px;
+  font-size: 2.5rem; }
+
+.contact__list {
+  max-width: 700px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contact__item {
+  margin: 50px 40px;
+  width: 240px; }
+
+.contact__item--last {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3; }
+
+.contact__item--data {
+  margin-top: 10px; }
 
 /***===
 3. SCREEN 760px
