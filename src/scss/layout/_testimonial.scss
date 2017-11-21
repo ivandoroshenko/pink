@@ -14,10 +14,10 @@
     position: relative;
 	margin: 0 auto;
 }
-.testimonial__flex-container {
+/* .testimonial__flex-container {
 	display: flex;
 	justify-content: center;
-}	
+}	 */
 .testimonial__content {
 	margin-top: 70px;
 } 
@@ -38,7 +38,7 @@
 	font-weight: 700;
 	font-size: 24px;
 	color: #000;
-	margin: 40px 0 0 0;
+	padding: 40px 0 0 0;
 }
 .testimonial__text-bottom {
 	display: flex;
