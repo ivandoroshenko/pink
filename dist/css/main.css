@@ -3892,7 +3892,10 @@ body {
 .favorite {
   stroke-width: 3px;
   stroke: #d22856;
-  fill: #f2f2f2; }
+  fill: #f2f2f2;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
 
 .like__svg:active > .favorite {
   fill: #d22856; }

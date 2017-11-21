@@ -150,6 +150,7 @@
                     stroke-width: 3px;
                     stroke: $colorAccent;
                     fill: #f2f2f2;
+                    transition: all .2s ease-in-out;
                 }
                 
                 .like__svg:active>.favorite{
