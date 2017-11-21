@@ -1,39 +1,59 @@
-/*
- @media screen and (max-width: 1220px) {
-    .container {
-      width: 992px;
-    }
-} 
-@media screen and (max-width:1210px){
-    * {
-        width: 970px;
-    }
-    
-} 
-@media screen and (max-width:992px){
-    * {
-        width: 750px;
-    }
-}
+/***1. SCREEN 1102px
 
-@media screen and (max-width:768px){
-    * {
-        width: auto;
-    }
-}
-*/
+    1.1. HEADER NAVIGATION
+    1.2. FORM PAGE
 
-/***=== SCREEN 1102px ===***/
+2. SCREEN 890px
+
+    2.1. INTRO
+
+3. SCREEN 760px
+
+3.1  LOGO
+    3.2  RESPONSIVE NAVIGATION
+    3.3  INTRO
+    3.4  ACHIVEMENTS FORM
+    3.5  FOOTER
+    3.6  FORM PAGE
+    3.7  personal form
+    3.8  contacts form
+    3.9  ACHIVEMENTS FORM
+    3.10 SUBMIT FORM
+
+4. SCREEN 600px
+
+    4.1. SUBMIT FORM
+    4.2. FOOTER HOME PAGE
+    4.3. FOOTER FORM PAGE
+
+5. screen 410px
+
+6. FORM HEADER
+    6.1. INTRO
+    6.2. FORM PERSONAL
+    6.3. ATTACHMENT FORM
+    6.4. CONTACTS INFO
+    6.5. ACHIVEMENTS FORM
+    6.6. EMOTION FORM
+
+7 responsive for photo page
+    7.1. photo page responsive tablet
+    7.2. photo__rewiew section responsive tablet
+    7.3. photo/customer__card section responsive tablet
+    7.4. photo/upload section responsive tablet
+    7.5. photoupload section responsive tablet
+    ***/
+/***=== 1. SCREEN 1102px ===***/
 
 @media screen and (max-width: 1102px) {
-    
+
     .container {
         width: 720px;
     }
 
     /***
     *
-    * HEADER NAVIGATION
+    * 1.1. HEADER NAVIGATION
     *
     ***/
 
@@ -44,23 +64,27 @@
     .nav__item {
         position: relative;
         margin-right: 50px;
-        
+
         &:last-child {
             margin-right: 0px;
         }
     }
-
+   /***
+    *
+    * 1.2 FORM PAGE
+    *
+    ***/
     .form-preview__title {
         max-width: 650px;
     }
 
     .form-desc {
-        width:90%; 
+        width:90%;
     }
         .form__personal-info {
             @include flexColumn;
         }
-    
+
         .form-name,
         .attachment-form {
             width: 100%;
@@ -72,8 +96,11 @@
             margin: -23.5px 0;
         }
 }
-
+/***=== 2. SCREEN 890px ===***/
 @media screen and (max-width: 890px) {
+    /*
+    2.1. INTRO
+    */
     .intro-iphone {
         width: 900px;
     }
@@ -83,14 +110,15 @@
     }
 }
 
-/***=== SCREEN 710px ===***/
+/***===
+3. SCREEN 760px
+===***/
 
 @media screen and (max-width: 760px) {
-    
+
     .container{
         width: 620px;
         padding: 0 15px;
-        
     }
 
     .label-nav {
@@ -98,7 +126,12 @@
         z-index: 104;
     }
 
-    /*logo*/
+    /*
+    3.1  LOGO
+    */
+    .logo-header, .logo-footer{
+            position: static;
+        }
     .logo-header--bg {
         background: url('../img/tablet-img/logotype-white-tablet-svg.svg') center center no-repeat;
         background-size: cover;
@@ -110,11 +143,9 @@
 
     /***
     *
-    * RESPONSIVE NAVIGATION
+    * 3.2 RESPONSIVE NAVIGATION
     *
     ***/
-
-    /*responsive nav*/
 
     .main-header  {
         background: none;
@@ -138,7 +169,7 @@
 
     .nav__list {
         flex-direction: column;
-        
+
     }
 
     .nav__item {
@@ -147,7 +178,7 @@
         width: 100%;
         margin: 0;
         text-align: center;
-        
+
     }
 
     .nav__item:hover {
@@ -157,7 +188,7 @@
     }
 
     .nav__link {
-        
+
         display: block;
         padding: 25px 0;
         text-transform: uppercase;
@@ -183,12 +214,12 @@
 
     /***
     *
-    * INTRO
+    * 3.3. INTRO
     *
-    ***/   
+    ***/
 
     .intro {
-        padding: 213px 0 110px 0; 
+        padding: 213px 0 110px 0;
     }
 
     .intro-desr__title {
@@ -218,7 +249,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.4. ACHIVEMENTS FORM
     *
     ***/
 
@@ -239,7 +270,7 @@
 
     /***
     *
-    * FOOTER
+    * 3.5. FOOTER
     *
     ***/
 
@@ -249,7 +280,7 @@
 
     /***
     *
-    * FORM PAGE
+    * 3.6 FORM PAGE
     *
     ***/
 
@@ -261,8 +292,10 @@
         width: 490px;
     }
 
-    /*personal form*/
-    
+    /*
+    3.7. personal form
+    */
+
     .form__personal-info {
         @include flexColumn;
     }
@@ -274,7 +307,9 @@
         margin-bottom: 60px;
     }
 
-    /*contacts form*/
+    /*
+    3.8. contacts form
+    */
 
     .contacts, {
         @include flexColumn;
@@ -296,7 +331,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.9. ACHIVEMENTS FORM
     *
     ***/
 
@@ -307,17 +342,19 @@
 
     /***
     *
-    * SUBMIT FORM
+    * 3.10 SUBMIT FORM
     *
     ****/
 
     .delete-text {
         display: none;
     }
-    
+
 }
 
-/***=== SCREEN 600px ===***/
+/***===
+4. SCREEN 600px
+ ===***/
 
 @media screen and (max-width: 655px) {
 
@@ -325,7 +362,7 @@
       width: 100%;
       padding: 0 20px;
     }
-      
+
     .form-desc {
         width: 80%;
     }
@@ -337,7 +374,7 @@
 
     /***
     *
-    * SUBMIT FORM
+    * 4.1. SUBMIT FORM
     *
     ****/
 
@@ -347,7 +384,7 @@
 
     /****
     *
-    * FOOTER HOM PAGE
+    * 4.2. FOOTER HOME PAGE
     *
     ***/
 
@@ -355,13 +392,13 @@
         display: none;
     }
 
-    .btn-sibmit {
+        .btn-sibmit {
         margin-bottom: 46px;
     }
 
     /***
     *
-    * FOOTER FORM PAGE
+    * 4.3. FOOTER FORM PAGE
     *
     ***/
 
@@ -379,7 +416,9 @@
     }
 
 }
-
+/***
+5. SCREEN 410px
+***/
 @media screen and (max-width: 410px) {
     .container {
       width: 100%;
@@ -388,7 +427,7 @@
 
     /***
     *
-    * FORM HEADER
+    *5.1. FORM HEADER
     *
     ***/
 
@@ -397,11 +436,11 @@
     }
 
     .form-preview {
-        padding: 102px 0 53px 0; 
+        padding: 102px 0 53px 0;
     }
 
     .form-heder {
-        padding: 54px 0 49px 0; 
+        padding: 54px 0 49px 0;
     }
 
     .dellete__text-heder {
@@ -414,7 +453,7 @@
 
     /***
     *
-    * INTRO
+    *5.2. INTRO
     *
     ***/
 
@@ -452,6 +491,7 @@
             font-weight: 300;
             line-height: 1.5rem;
         }
+    }
 
     .btn-download {
         margin: 0 0 35px 0;
@@ -460,23 +500,23 @@
     .attachment {
         margin: 0 auto 30px;
     }
-    
+
     .btn__link {
         font-size: 1.125rem;
     }
 
     /***
     *
-    * FORM PERSONAL
+    * 5.3. FORM PERSONAL
     *
     ***/
 
     .name,
     .fullname,
     .middlename {
-        @include flexColumn; 
+        @include flexColumn;
         align-items: stretch;
-        width: 100%; 
+        width: 100%;
     }
 
     .form-name {
@@ -488,12 +528,12 @@
     }
 
     .fullname-label {
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     /***
     *
-    * ATTACHMENT FORM
+    * 5.4. ATTACHMENT FORM
     *
     ***/
 
@@ -507,12 +547,12 @@
 
     /***
     *
-    * CONTACTS INFO
+    * 5.5. CONTACTS INFO
     *
     ***/
 
     .dellete-legend {
-        display:none; 
+        display:none;
     }
     .contacts {
         padding:0 20px;
@@ -530,7 +570,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 5.6. ACHIVEMENTS FORM
     *
     ***/
 
@@ -542,11 +582,11 @@
     .achievements {
         padding: 0 20px;
     }
-    
+
 
     /***
     *
-    * EMOTION FORM
+    * 5.7. EMOTION FORM
     *
     ***/
 
@@ -573,7 +613,6 @@
     .submit-button {
         padding: 22.5px 45px;
     }
-}
 }
 
 

@@ -1,3 +1,6 @@
+.logo-footer{
+    @include center-logo;
+    }
 .logo-footer--bg {
     background: url('../img/tablet-img/logotype-blue-tablet-svg.svg') center center no-repeat;
     background-size: cover;

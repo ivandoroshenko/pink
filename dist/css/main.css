@@ -2975,6 +2975,10 @@ body {
   align-items: center;
   padding: 27px 0 42px 0; }
 
+.logo-header {
+  position: relative;
+  top: -8px; }
+
 .logo-header--bg {
   background: url("../img/logotype-white-desktop.png") center center no-repeat;
   background-size: cover;
@@ -2986,7 +2990,7 @@ body {
 
 .nav__list {
   padding: 0;
-  margin: 0;
+  margin: 5px 0 0 0;
   list-style: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3612,6 +3616,10 @@ body {
   /* your iframe height */
   margin-top: -750px;
   /* your iframe height */ }
+
+.logo-footer {
+  position: relative;
+  top: -8px; }
 
 .logo-footer--bg {
   background: url("../img/tablet-img/logotype-blue-tablet-svg.svg") center center no-repeat;
@@ -4414,37 +4422,58 @@ textarea {
   .submit .attention-text {
     margin: 0; }
 
-/*
- @media screen and (max-width: 1220px) {
-    .container {
-      width: 992px;
-    }
-} 
-@media screen and (max-width:1210px){
-    * {
-        width: 970px;
-    }
-    
-} 
-@media screen and (max-width:992px){
-    * {
-        width: 750px;
-    }
-}
+/***1. SCREEN 1102px
 
-@media screen and (max-width:768px){
-    * {
-        width: auto;
-    }
-}
-*/
-/***=== SCREEN 1102px ===***/
+    1.1. HEADER NAVIGATION
+    1.2. FORM PAGE
+
+2. SCREEN 890px
+
+    2.1. INTRO
+
+3. SCREEN 760px
+
+3.1  LOGO
+    3.2  RESPONSIVE NAVIGATION
+    3.3  INTRO
+    3.4  ACHIVEMENTS FORM
+    3.5  FOOTER
+    3.6  FORM PAGE
+    3.7  personal form
+    3.8  contacts form
+    3.9  ACHIVEMENTS FORM
+    3.10 SUBMIT FORM
+
+4. SCREEN 600px
+
+    4.1. SUBMIT FORM
+    4.2. FOOTER HOME PAGE
+    4.3. FOOTER FORM PAGE
+
+5. screen 410px
+
+6. FORM HEADER
+    6.1. INTRO
+    6.2. FORM PERSONAL
+    6.3. ATTACHMENT FORM
+    6.4. CONTACTS INFO
+    6.5. ACHIVEMENTS FORM
+    6.6. EMOTION FORM
+
+7 responsive for photo page
+    7.1. photo page responsive tablet
+    7.2. photo__rewiew section responsive tablet
+    7.3. photo/customer__card section responsive tablet
+    7.4. photo/upload section responsive tablet
+    7.5. photoupload section responsive tablet
+    ***/
+/***=== 1. SCREEN 1102px ===***/
 @media screen and (max-width: 1102px) {
   .container {
     width: 720px; }
   /***
     *
-    * HEADER NAVIGATION
+    * 1.1. HEADER NAVIGATION
     *
     ***/
   .header-nav {
@@ -4454,6 +4483,11 @@ textarea {
     margin-right: 50px; }
     .nav__item:last-child {
       margin-right: 0px; }
+  /***
+    *
+    * 1.2 FORM PAGE
+    *
+    ***/
   .form-preview__title {
     max-width: 650px; }
   .form-desc {
@@ -4484,13 +4518,19 @@ textarea {
   .achievements {
     margin: -23.5px 0; } }
 
+/***=== 2. SCREEN 890px ===***/
 @media screen and (max-width: 890px) {
+  /*
+    2.1. INTRO
+    */
   .intro-iphone {
     width: 900px; }
   .photo-iphone {
     right: 175px; } }
 
-/***=== SCREEN 710px ===***/
+/***===
+3. SCREEN 760px
+===***/
 @media screen and (max-width: 760px) {
   .container {
     width: 620px;
@@ -4498,7 +4538,11 @@ textarea {
   .label-nav {
     display: block;
     z-index: 104; }
-  /*logo*/
+  /*
+    3.1  LOGO
+    */
+  .logo-header, .logo-footer {
+    position: static; }
   .logo-header--bg {
     background: url("../img/tablet-img/logotype-white-tablet-svg.svg") center center no-repeat;
     background-size: cover;
@@ -4508,10 +4552,9 @@ textarea {
     z-index: 105; }
   /***
     *
-    * RESPONSIVE NAVIGATION
+    * 3.2 RESPONSIVE NAVIGATION
     *
     ***/
-  /*responsive nav*/
   .main-header {
     background: none; }
   .nav__item::before {
@@ -4567,7 +4610,7 @@ textarea {
     display: none; }
   /***
     *
-    * INTRO
+    * 3.3. INTRO
     *
     ***/
   .intro {
@@ -4589,7 +4632,7 @@ textarea {
     right: 118px; }
   /***
     *
-    * ACHIVEMENTS FORM
+    * 3.4. ACHIVEMENTS FORM
     *
     ***/
   .achievements {
@@ -4603,21 +4646,23 @@ textarea {
       margin: 0; }
   /***
     *
-    * FOOTER
+    * 3.5. FOOTER
     *
     ***/
   .main-footer {
     padding: 88px 0 51px 0; }
   /***
     *
-    * FORM PAGE
+    * 3.6 FORM PAGE
     *
     ***/
   .form-preview__title {
     width: 470px; }
   .form-desc {
     width: 490px; }
-  /*personal form*/
+  /*
+    3.7. personal form
+    */
   .form__personal-info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4641,7 +4686,9 @@ textarea {
     width: 100%;
     padding: 0;
     margin-bottom: 60px; }
-  /*contacts form*/
+  /*
+    3.8. contacts form
+    */
   .contacts {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4671,7 +4718,7 @@ textarea {
     width: 100%; }
   /***
     *
-    * ACHIVEMENTS FORM
+    * 3.9. ACHIVEMENTS FORM
     *
     ***/
   .achievements {
@@ -4698,13 +4745,15 @@ textarea {
     align-items: stretch; }
   /***
     *
-    * SUBMIT FORM
+    * 3.10 SUBMIT FORM
     *
     ****/
   .delete-text {
     display: none; } }
 
-/***=== SCREEN 600px ===***/
+/***===
+4. SCREEN 600px
+ ===***/
 @media screen and (max-width: 655px) {
   .container {
     width: 100%;
@@ -4716,7 +4765,7 @@ textarea {
     font-size: 2.5rem; }
   /***
     *
-    * SUBMIT FORM
+    * 4.1. SUBMIT FORM
     *
     ****/
   .submit {
@@ -4739,7 +4788,7 @@ textarea {
     align-items: center; }
   /****
     *
-    * FOOTER HOM PAGE
+    * 4.2. FOOTER HOME PAGE
     *
     ***/
   .footer__home-page {
@@ -4748,7 +4797,7 @@ textarea {
     margin-bottom: 46px; }
   /***
     *
-    * FOOTER FORM PAGE
+    * 4.3. FOOTER FORM PAGE
     *
     ***/
   .footer__form-page {
@@ -4775,13 +4824,16 @@ textarea {
   .social__list {
     margin-bottom: 42px; } }
 
+/***
+5. SCREEN 410px
+***/
 @media screen and (max-width: 410px) {
   .container {
     width: 100%;
     padding: 0; }
   /***
     *
-    * FORM HEADER
+    *5.1. FORM HEADER
     *
     ***/
   fieldset {
@@ -4796,7 +4848,7 @@ textarea {
     font-size: 1.5rem; }
   /***
     *
-    * INTRO
+    *5.2. INTRO
     *
     ***/
   .intro {
@@ -4837,32 +4889,7 @@ textarea {
   .intro-desr {
     max-width: 100%;
     padding: 28px 20px 0 20px;
-    background: #283645;
-    /***
-    *
-    * FORM PERSONAL
-    *
-    ***/
-    /***
-    *
-    * ATTACHMENT FORM
-    *
-    ***/
-    /***
-    *
-    * CONTACTS INFO
-    *
-    ***/
-    /***
-    *
-    * ACHIVEMENTS FORM
-    *
-    ***/
-    /***
-    *
-    * EMOTION FORM
-    *
-    ***/ }
+    background: #283645; }
     .intro-desr__title {
       display: none; }
     .intro-desr-text {
@@ -4871,84 +4898,109 @@ textarea {
       font-size: 0.875rem;
       font-weight: 300;
       line-height: 1.5rem; }
-    .intro-desr .btn-download {
-      margin: 0 0 35px 0; }
-    .intro-desr .attachment {
-      margin: 0 auto 30px; }
-    .intro-desr .btn__link {
-      font-size: 1.125rem; }
-    .intro-desr .name,
-    .intro-desr .fullname,
-    .intro-desr .middlename {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-align: stretch;
-      -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-      align-items: stretch;
-      width: 100%; }
-    .intro-desr .form-name {
-      padding: 0 20px;
-      margin-bottom: 45px; }
-    .intro-desr .input-size {
-      width: 100%; }
-    .intro-desr .fullname-label {
-      padding-left: 20px; }
-    .intro-desr .attachment-form {
-      background: #f2f2f2;
-      padding: 40px 0 45px 0; }
-    .intro-desr .input-attachment__wrap {
-      padding: 40px 0 55px 20px; }
-    .intro-desr .dellete-legend {
-      display: none; }
-    .intro-desr .contacts {
-      padding: 0 20px; }
-    .intro-desr .input-tel::before,
-    .intro-desr .input-email::before {
-      display: none; }
-    .intro-desr .label-phone,
-    .intro-desr .label-email {
-      -webkit-box-ordinal-group: 0;
-      -webkit-order: -1;
-      -ms-flex-order: -1;
-      order: -1; }
-    .intro-desr .achievements-form {
-      background: #f2f2f2;
-      padding: 40px 0 45px 0;
-      margin: 0; }
-    .intro-desr .achievements {
-      padding: 0 20px; }
-    .intro-desr .emotions-form {
-      margin: 60px 20px 51px 20px; }
-    .intro-desr fieldset {
-      border: none; }
-    .intro-desr .emotions {
-      padding: 0;
-      margin-top: 20px; }
-    .intro-desr .attachment-form {
-      -webkit-box-ordinal-group: 6;
-      -webkit-order: 5;
-      -ms-flex-order: 5;
-      order: 5; }
-    .intro-desr textarea {
-      height: 197px; }
-    .intro-desr .submit-button {
-      padding: 22.5px 45px; } }
+  .btn-download {
+    margin: 0 0 35px 0; }
+  .attachment {
+    margin: 0 auto 30px; }
+  .btn__link {
+    font-size: 1.125rem; }
+  /***
+    *
+    * 5.3. FORM PERSONAL
+    *
+    ***/
+  .name,
+  .fullname,
+  .middlename {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%; }
+  .form-name {
+    padding: 0 20px;
+    margin-bottom: 45px; }
+  .input-size {
+    width: 100%; }
+  .fullname-label {
+    padding-left: 20px; }
+  /***
+    *
+    * 5.4. ATTACHMENT FORM
+    *
+    ***/
+  .attachment-form {
+    background: #f2f2f2;
+    padding: 40px 0 45px 0; }
+  .input-attachment__wrap {
+    padding: 40px 0 55px 20px; }
+  /***
+    *
+    * 5.5. CONTACTS INFO
+    *
+    ***/
+  .dellete-legend {
+    display: none; }
+  .contacts {
+    padding: 0 20px; }
+  .input-tel::before,
+  .input-email::before {
+    display: none; }
+  .label-phone,
+  .label-email {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1; }
+  /***
+    *
+    * 5.6. ACHIVEMENTS FORM
+    *
+    ***/
+  .achievements-form {
+    background: #f2f2f2;
+    padding: 40px 0 45px 0;
+    margin: 0; }
+  .achievements {
+    padding: 0 20px; }
+  /***
+    *
+    * 5.7. EMOTION FORM
+    *
+    ***/
+  .emotions-form {
+    margin: 60px 20px 51px 20px; }
+  fieldset {
+    border: none; }
+  .emotions {
+    padding: 0;
+    margin-top: 20px; }
+  .attachment-form {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5; }
+  textarea {
+    height: 197px; }
+  .submit-button {
+    padding: 22.5px 45px; } }
 
 /* responsive for photo page */
 /* photo page responsive*/
