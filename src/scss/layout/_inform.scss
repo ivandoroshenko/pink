@@ -4,7 +4,7 @@
 }
 
 
-.listes--wrap{
+.lists--wrap{
     width: 100%;
     height: 100%;   
     position: relative;
@@ -85,7 +85,7 @@
                 position: relative;
             }              
 
-                .card__imeg{
+                .card__image{
                     display: block;
                     margin: 0 auto;
                     position: relative;
@@ -94,7 +94,7 @@
                     z-index: 997;
                 }
 
-                .phone__imeg{
+                .phone__image{
                     position: absolute;
                     top: 42px;
                     left: 50%;
@@ -161,7 +161,9 @@
         
     }        
   
-    
+    /* responsive for inform section in main page   */
+
+    /* responsive for inform section in main page TABLET   */
     @media only screen and (max-width : 979px) {
 
         .container-inform{
@@ -188,10 +190,6 @@
        
            
         }  
-
-        .listes--wrap{
-           
-        }
 
         .inform__link{
             text-align: left;
@@ -222,12 +220,84 @@
             margin: 0; 
             line-height: 1.5rem;
         }
+
+        .inform__title, .inform__text{
+            font-size: 2.5rem;
+        }
+        .inform__list{
+            padding: 45px 45px;
+        }
+        .inform__item{
+            margin-top: 45px;
+        }
+
+    .card__desc{
+
+        margin-top: 20px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            max-width: 307px;
+        }
+
+        .card__image{
+            transform: scale(1.4);
+
+        }
+
+        .phone__image{
+            transform: scale(1.4);
+            left: 16%;
+          
+        }
     }
+
+
+    /* responsive for inform section in main page MOBILE   */
     
-    @media only screen and (max-width : 480px) {
-    
+    @media only screen and (max-width : 700px) {
+         .container-inform{
+            width: 280px;    
+            display: flex;
+            flex-direction: column;
+                    
+        }
+
+        .inform__title{
+        text-align: center;
+        width: 280px;       
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 50px auto 0 auto;
+
     }
-    
-    @media only screen and (max-width : 320px) {
-    
+
+    .inform__text{
+        text-align: center;
+        width: 280px;
+        margin: 0 auto;
+        font-size: 2rem;
+        font-weight: 300;
+
     }
+
+        .inform__list{
+            padding: 45px 0px;
+
+        }
+
+
+        .inform__item:first-child{
+            margin-top: 90px;
+        }
+
+        .inform__link{
+            text-align: center;
+            width: 250px;
+        }
+
+
+        .card__text{
+            width: 250px;
+        }
+    }
+  

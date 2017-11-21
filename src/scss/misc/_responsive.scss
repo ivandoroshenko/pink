@@ -1,81 +1,303 @@
-@media screen and (max-width: 1220px) {
+/***1. SCREEN 1102px
+
+    1.1. HEADER NAVIGATION
+    1.2. FORM PAGE
+
+2. SCREEN 890px
+
+    2.1. INTRO
+
+3. SCREEN 760px
+
+3.1  LOGO
+    3.2  RESPONSIVE NAVIGATION
+    3.3  INTRO
+    3.4  ACHIVEMENTS FORM
+    3.5  FOOTER
+    3.6  FORM PAGE
+    3.7  personal form
+    3.8  contacts form
+    3.9  ACHIVEMENTS FORM
+    3.10 SUBMIT FORM
+
+4. SCREEN 600px
+
+    4.1. SUBMIT FORM
+    4.2. FOOTER HOME PAGE
+    4.3. FOOTER FORM PAGE
+
+5. screen 410px
+
+6. FORM HEADER
+    6.1. INTRO
+    6.2. FORM PERSONAL
+    6.3. ATTACHMENT FORM
+    6.4. CONTACTS INFO
+    6.5. ACHIVEMENTS FORM
+    6.6. EMOTION FORM
+
+7 responsive for photo page
+    7.1. photo page responsive tablet
+    7.2. photo__rewiew section responsive tablet
+    7.3. photo/customer__card section responsive tablet
+    7.4. photo/upload section responsive tablet
+    7.5. photoupload section responsive tablet
+    ***/
+/***=== 1. SCREEN 1102px ===***/
+
+@media screen and (max-width: 1102px) {
+
     .container {
-      width: 992px;
+        width: 720px;
+    }
+
+    /***
+    *
+    * 1.1. HEADER NAVIGATION
+    *
+    ***/
+
+    .header-nav {
+        width: 535px;
+    }
+
+    .nav__item {
+        position: relative;
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+   /***
+    *
+    * 1.2 FORM PAGE
+    *
+    ***/
+    .form-preview__title {
+        max-width: 650px;
+    }
+
+    .form-desc {
+        width:90%;
+    }
+        .form__personal-info {
+            @include flexColumn;
+        }
+
+        .form-name,
+        .attachment-form {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        .achievements {
+            margin: -23.5px 0;
+        }
+}
+/***=== 2. SCREEN 890px ===***/
+@media screen and (max-width: 890px) {
+    /*
+    2.1. INTRO
+    */
+    .intro-iphone {
+        width: 900px;
+    }
+
+    .photo-iphone {
+        right: 175px;
+    }
+
+
+
+
+
+/***
+* 2.3. DIAGRAM
+***/
+    .diagram__container{
+        width: 700px;
+        padding: 50px 40px;
+    }
+    .diagram__flex-container{
+        justify-content: space-between;
+    .column-left{
+        width: 240px;
+        background-size: 240px 280px;
+        flex-shrink: 0;
+    }
+    .column-right {
+        padding: 50px 0 80px 0;
+        margin-left: 70px / 700px * 100%;
+    }
+    .diagram__desc-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.875rem;
+        max-width: 177px;
+        line-height: 2.25rem;
+    }
+}
+    .about__desc-text{
+        max-width: 295px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    .about__desc--link{
+        display: block;
+        margin-top: 20px;
+        font-size: 0.875rem;
+    }
+    /***
+    * 2.4. TESTIMONIAL
+    ***/
+
+    .testimonial__container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 140px;
+    }
+    .testimonial__img{
+        display: none;
+    }
+    .testimonial__desc{
+        margin: 0 auto;
+    }
+
+    .testimonial__sub-title{
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 1102px) {
-    
-        .container {
-          width: 768px;
-        }
+/***
+* 2.5. PRICE
+***/
+.price__container{
+    padding: 56px 0 70px;
+    td.price__name{
+    font-size: 0.875rem;
+}
 }
 
-@media screen and (max-width: 710px) {
-    
-        .container{
-          width: 620px;
-          
-        }
-        .label-nav {
-            display: block;
-            z-index: 104;
-        }
+.price__heading{
+    font-size: 1rem;
+    span{
+       font-size: 1.125rem;
+    }
+}
 
-        .logo-header--bg {
-            background: url('../img/tablet-img/logotype-white-tablet-svg.svg') center center no-repeat;
-            background-size: cover;
-            width: 147px;
-            height: 40px;
-            position: relative;
-            z-index: 105;
-        }
+/***
+*2.6. CONTACTS
+***/
+.contact__title{
+    margin-top: 55px;
+    font-size: 2.5rem;
+}
+.contact__list{
+    max-width: 700px;
+    justify-content: center;
+}
 
+.contact__item{
+    margin: 50px 40px;
+    width: 240px;
+}
 
-        /*responsive nav*/
-        .main-header  {
-            background: none;
-            
-        }
+.contact__item--last{
+    order: 3;
+}
+.contact__item--data{
+    margin-top: 10px;
+}
 
-        .header-nav {
-            width: 100%;
-            background: #283645;
-            padding-top: 109px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            transform: translateY(-200%);
-            transition: transform .5s ease-in-out;
-        }
-        .nav__list {
-            flex-direction: column;
-            
-        }
-        .nav__item {
-            border-bottom: 1px solid #000;
-            border-top: 1px solid #485461;
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            
-        }
+/***===
+3. SCREEN 760px
+===***/
 
-        .nav__item:hover {
-            border-bottom: 1px solid #000;
-            border-top: 1px solid #000;
-            color: $colorAccent;
-        }
+@media screen and (max-width: 760px) {
 
-        .nav__link {
-            
-            display: block;
-            padding: 25px 0;
-            text-transform: uppercase;
-            transition: border .2s ease-in-out,
-                        color .2s ease-in-out;
+    .container{
+        width: 620px;
+        padding: 0 15px;
+    }
+
+    .label-nav {
+        display: block;
+        z-index: 104;
+    }
+
+    /*
+    3.1  LOGO
+    */
+    .logo-header, .logo-footer{
+            position: static;
         }
+    .logo-header--bg {
+        background: url('../img/tablet-img/logotype-white-tablet-svg.svg') center center no-repeat;
+        background-size: cover;
+        width: 147px;
+        height: 40px;
+        position: relative;
+        z-index: 105;
+    }
+
+    /***
+    *
+    * 3.2 RESPONSIVE NAVIGATION
+    *
+    ***/
+
+    .main-header  {
+        background: none;
+    }
+
+    .nav__item::before {
+        height: 0;
+    }
+
+    .header-nav {
+        width: 100%;
+        background: #283645;
+        padding-top: 109px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transform: translateY(-200%);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav__list {
+        flex-direction: column;
+
+    }
+
+    .nav__item {
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #485461;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .nav__item:hover {
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        color: $colorAccent;
+    }
+
+    .nav__link {
+
+        display: block;
+        padding: 25px 0;
+        text-transform: uppercase;
+        transition: border .2s ease-in-out,
+                    color .2s ease-in-out;
+    }
 
         .input-nav:checked ~  .header-nav {
             transform: translateY(0);
@@ -90,59 +312,414 @@
         }
 
         .input-nav:checked ~  .main-header {
-           display: none;
+            display: none;
         }
+
+    /***
+    *
+    * 3.3. INTRO
+    *
+    ***/
+
     .intro {
-        padding: 213px 0 110px 0; 
+        padding: 213px 0 110px 0;
     }
+
     .intro-desr__title {
         font-size: 2.5rem;
         margin: 0 0 31px 0;
     }
+
     .btn-download {
         margin: 0 0 52px 0;
     }
+
     .attachment {
         margin: 0 auto 44px;
     }
+
     .intro-iphone {
         width: 700px;
         height: 545px;
     }
+
     .photo-iphone {
         width: 195px;
         height: 347px;
         top: 53px;
         right: 118px;
     }
-    .main-footer {
-        padding: 35px 0;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .container {
-      width: 100%;
-    }
-}
+    /***
+    *
+    * 3.4. ACHIVEMENTS FORM
+    *
+    ***/
 
-@media screen and (max-width: 550px) {
-    .container {
-      width: 100%;
+    .achievements {
+        padding: 40px;
+        margin: 0;
     }
-    .intro-iphone {
-        width: 320px;
-        height: 314px;
+
+    .input-achievements {
+        margin: 0 0 47px 0;
+            &:first-child {
+                margin-top: 42px;
+            }
+            &:last-child {
+                margin: 0;
+            }
     }
-    .photo-iphone {
-        width: 111px;
-        height: 197px;
-        top: 32px;
-        right: 27px;
-    }
+
+    /***
+    *
+    * 3.5. FOOTER
+    *
+    ***/
+
     .main-footer {
+        padding: 88px 0 51px 0;
+    }
+
+    /***
+    *
+    * 3.6 FORM PAGE
+    *
+    ***/
+
+    .form-preview__title {
+        width: 470px;
+    }
+
+    .form-desc {
+        width: 490px;
+    }
+
+    /*
+    3.7. personal form
+    */
+
+    .form__personal-info {
+        @include flexColumn;
+    }
+
+    .form-name,
+    .attachment-form {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    /*
+    3.8. contacts form
+    */
+
+    .contacts, {
+        @include flexColumn;
+    }
+
+    .phone-number,
+    .email {
+        width: 100%;
+        padding: 0;
+    }
+
+    .phone-number {
+        margin-bottom: 40px;
+    }
+    .input-tel,
+    .input-email {
+        width: 100%;
+    }
+
+    /***
+    *
+    * 3.9. ACHIVEMENTS FORM
+    *
+    ***/
+
+    .achievements {
+        @include flexColumn;
+        align-items: stretch;
+    }
+
+    /***
+    *
+    * 3.10 SUBMIT FORM
+    *
+    ****/
+
+    .delete-text {
         display: none;
     }
 
 }
 
+/***===
+4. SCREEN 600px
+ ===***/
+
+@media screen and (max-width: 655px) {
+
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .form-desc {
+        width: 80%;
+    }
+
+    .form-preview__title {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    /***
+    *
+    * 4.1. SUBMIT FORM
+    *
+    ****/
+
+    .submit {
+        @include flexColumn;
+    }
+
+    /****
+    *
+    * 4.2. FOOTER HOME PAGE
+    *
+    ***/
+
+    .footer__home-page {
+        display: none;
+    }
+
+        .btn-sibmit {
+        margin-bottom: 46px;
+    }
+
+    /***
+    *
+    * 4.3. FOOTER FORM PAGE
+    *
+    ***/
+
+    .footer__form-page {
+        padding: 64px 0 0 0;
+    }
+
+    .footer-content {
+        @include flexColumn;
+    }
+
+    .logo-footer--bg,
+    .social__list {
+        margin-bottom: 42px;
+    }
+
+}
+/***
+5. SCREEN 410px
+***/
+@media screen and (max-width: 410px) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+
+    /***
+    *
+    *5.1. FORM HEADER
+    *
+    ***/
+
+    fieldset {
+        border: none;
+    }
+
+    .form-preview {
+        padding: 102px 0 53px 0;
+    }
+
+    .form-heder {
+        padding: 54px 0 49px 0;
+    }
+
+    .dellete__text-heder {
+        display: none;
+    }
+
+    .form-preview__title {
+        font-size: 1.5rem;
+    }
+
+    /***
+    *
+    *5.2. INTRO
+    *
+    ***/
+
+    .intro {
+        @include flexColumn;
+        padding: 176px 0 0 0;
+    }
+
+    .intro-iphone {
+        position: relative;
+        transform: translateX(-15%);
+        width: 350px;
+        height: 314px;
+        order: -1;
+    }
+
+    .photo-iphone {
+        width: 111px;
+        height: 197px;
+        top: 32px;
+        right: 42px;
+    }
+
+    .intro-desr {
+        max-width: 100%;
+        padding: 28px 20px 0 20px;
+        background: #283645;
+        &__title {
+            display: none;
+        }
+        &-text {
+            margin: 0;
+            font-family: "Open Sans";
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+    }
+
+    .btn-download {
+        margin: 0 0 35px 0;
+    }
+
+    .attachment {
+        margin: 0 auto 30px;
+    }
+
+    .btn__link {
+        font-size: 1.125rem;
+    }
+
+    /***
+    *
+    * 5.3. FORM PERSONAL
+    *
+    ***/
+
+    .name,
+    .fullname,
+    .middlename {
+        @include flexColumn;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .form-name {
+        padding: 0 20px;
+        margin-bottom: 45px;
+    }
+    .input-size {
+        width: 100%;
+    }
+
+    .fullname-label {
+        padding-left: 20px;
+    }
+
+    /***
+    *
+    * 5.4. ATTACHMENT FORM
+    *
+    ***/
+
+    .attachment-form {
+        background: #f2f2f2;
+        padding: 40px 0 45px 0;
+    }
+    .input-attachment__wrap {
+        padding: 40px 0 55px 20px;
+    }
+
+    /***
+    *
+    * 5.5. CONTACTS INFO
+    *
+    ***/
+
+    .dellete-legend {
+        display:none;
+    }
+    .contacts {
+        padding:0 20px;
+    }
+
+    .input-tel::before,
+    .input-email::before {
+        display: none;
+    }
+    .label-phone,
+    .label-email {
+        order: -1;
+    }
+
+
+    /***
+    *
+    * 5.6. ACHIVEMENTS FORM
+    *
+    ***/
+
+    .achievements-form {
+        background: #f2f2f2;
+        padding: 40px 0 45px 0;
+        margin: 0;
+    }
+    .achievements {
+        padding: 0 20px;
+    }
+
+
+    /***
+    *
+    * 5.7. EMOTION FORM
+    *
+    ***/
+
+    .emotions-form {
+        margin: 60px 20px 51px 20px;
+    }
+
+    fieldset {
+       border: none;
+    }
+
+    .emotions {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .attachment-form {
+        order: 5;
+    }
+    textarea {
+        height: 197px;
+    }
+
+    .submit-button {
+        padding: 22.5px 45px;
+    }
+}
+
+
+
+
+
+    
