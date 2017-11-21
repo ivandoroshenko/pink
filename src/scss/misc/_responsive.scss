@@ -3,13 +3,13 @@
     .container {
       width: 992px;
     }
-} 
+}
 @media screen and (max-width:1210px){
     * {
         width: 970px;
     }
-    
-} 
+
+}
 @media screen and (max-width:992px){
     * {
         width: 750px;
@@ -26,7 +26,7 @@
 /***=== SCREEN 1102px ===***/
 
 @media screen and (max-width: 1102px) {
-    
+
     .container {
         width: 720px;
     }
@@ -40,11 +40,11 @@
     .header-nav {
         width: 535px;
     }
-    
+
     .nav__item {
         position: relative;
         margin-right: 50px;
-        
+
         &:last-child {
             margin-right: 0px;
         }
@@ -55,12 +55,12 @@
     }
 
     .form-desc {
-        width:90%; 
+        width:90%;
     }
         .form__personal-info {
             @include flexColumn;
         }
-    
+
         .form-name,
         .attachment-form {
             width: 100%;
@@ -86,11 +86,11 @@
 /***=== SCREEN 710px ===***/
 
 @media screen and (max-width: 760px) {
-    
+
     .container{
         width: 620px;
         padding: 0 15px;
-        
+
     }
 
     .label-nav {
@@ -122,7 +122,7 @@
     .main-header  {
         background: none;
     }
-    
+
     .nav__item::before {
         height: 0;
     }
@@ -141,7 +141,7 @@
 
     .nav__list {
         flex-direction: column;
-        
+
     }
 
     .nav__item {
@@ -150,7 +150,7 @@
         width: 100%;
         margin: 0;
         text-align: center;
-        
+
     }
 
     .nav__item:hover {
@@ -160,7 +160,7 @@
     }
 
     .nav__link {
-        
+
         display: block;
         padding: 25px 0;
         text-transform: uppercase;
@@ -188,10 +188,10 @@
     *
     * INTRO
     *
-    ***/   
+    ***/
 
     .intro {
-        padding: 213px 0 110px 0; 
+        padding: 213px 0 110px 0;
     }
 
     .intro-desr__title {
@@ -265,7 +265,7 @@
     }
 
     /*personal form*/
-    
+
     .form__personal-info {
         @include flexColumn;
     }
@@ -317,7 +317,7 @@
     .delete-text {
         display: none;
     }
-    
+
 }
 
 /***=== SCREEN 600px ===***/
@@ -328,7 +328,7 @@
       width: 100%;
       padding: 0 20px;
     }
-      
+
     .form-desc {
         width: 80%;
     }
@@ -358,7 +358,7 @@
         display: none;
     }
 
-    .btn-sibmit {
+        .btn-sibmit {
         margin-bottom: 46px;
     }
 
@@ -400,11 +400,11 @@
     }
 
     .form-preview {
-        padding: 102px 0 53px 0; 
+        padding: 102px 0 53px 0;
     }
 
     .form-heder {
-        padding: 54px 0 49px 0; 
+        padding: 54px 0 49px 0;
     }
 
     .dellete__text-heder {
@@ -455,6 +455,7 @@
             font-weight: 300;
             line-height: 1.5rem;
         }
+    }
 
     .btn-download {
         margin: 0 0 35px 0;
@@ -463,13 +464,13 @@
     .attachment {
         margin: 0 auto 30px;
     }
-    
+
     .btn__link {
         font-size: 1.125rem;
     }
 
     /***
-    *
+    *S
     * FORM PERSONAL
     *
     ***/
@@ -477,9 +478,9 @@
     .name,
     .fullname,
     .middlename {
-        @include flexColumn; 
+        @include flexColumn;
         align-items: stretch;
-        width: 100%; 
+        width: 100%;
     }
 
     .form-name {
@@ -491,7 +492,7 @@
     }
 
     .fullname-label {
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     /***
@@ -515,7 +516,7 @@
     ***/
 
     .dellete-legend {
-        display:none; 
+        display:none;
     }
     .contacts {
         padding:0 20px;
@@ -545,7 +546,7 @@
     .achievements {
         padding: 0 20px;
     }
-    
+
 
     /***
     *
@@ -577,7 +578,7 @@
         padding: 22.5px 45px;
     }
 }
-}
+
 
 
 
@@ -592,13 +593,13 @@
     /* photo__panorama section responsive tablet */
 
     .photo__panorama-btn {
-        right: 100px; 
+        right: 100px;
     }
 
     /* photo__rewiew section responsive tablet */
 
-    .rewiew{       
-        width: 570px; 
+    .rewiew{
+        width: 570px;
     }
 
         .rewiew__name-and-date{
@@ -613,8 +614,8 @@
     }
 
         .rewiew__customers-cards{
-            width: 232px; 
-            padding: 30px 0 0 0;                     
+            width: 232px;
+            padding: 30px 0 0 0;
         }
 
             .rewiew__name-and-date--customers-cards{
@@ -632,8 +633,8 @@
             }
 
 
-    /* photo/upload section responsive tablet */            
-                    
+    /* photo/upload section responsive tablet */
+
     .upload{
         width: 100%;
     }
@@ -641,14 +642,14 @@
         .app--wrap{
             align-items: flex-end;
         }
-    
-            .crop{                
-                width: 285px;               
+
+            .crop{
+                width: 285px;
             }
 
             .upload__icons{
                 width: 25px;
-                height: 25px;       
+                height: 25px;
             }
 
             .tools-for-picture{
@@ -662,13 +663,13 @@
                     margin-left: 40px;
                 }
 
-            .buttons{                    
+            .buttons{
                 flex-direction: column;
                 margin-top: 70px;
-            }    
+            }
 
-                .tools__btn{                      
-                    width: 260px;                        
+                .tools__btn{
+                    width: 260px;
                 }
 
                     .tools__btn--opacity{
@@ -676,17 +677,18 @@
                 }
 
 
-                .crop__slider[type=range] {                    
-                width: 200px;                    
-            } 
-
-            .crop__slider[type='range']::-webkit-slider-thumb {
-                width: 12px;
-                height: 12px;
-                
+                .crop__slider[type=range] {
+                width: 200px;
             }
 
-
-          
+            .crop__slider[type=range]::-webkit-slider-thumb {
+                width: 12px;
+                height: 12px;
+            }
 }
-    
+
+
+
+
+
+
