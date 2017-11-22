@@ -26,7 +26,7 @@
     4.2. FOOTER HOME PAGE
     4.3. FOOTER FORM PAGE
 
-5. screen 410px
+5. screen 500px
 
 6. FORM HEADER
     6.1. INTRO
@@ -250,10 +250,7 @@
     *
     ***/
 
-    .main-header  {
-        background: none;
-    }
-
+  
     .nav__item::before {
         height: 0;
     }
@@ -314,6 +311,12 @@
         .input-nav:checked ~  .main-header {
             display: none;
         }
+
+        .input-nav:checked ~  .drop-down__header {
+            background: #283645;
+            border-bottom: 1px solid #000;
+        }
+        
 
     /***
     *
@@ -460,6 +463,7 @@
  ===***/
 
 @media screen and (max-width: 655px) {
+    
 
     .container {
       width: 100%;
@@ -519,13 +523,96 @@
     }
 
 }
+
+/***
+5. SCREEN 500px
+***/
+
+@media screen and (max-width: 500px) {
+
+    .intro-conteiner {
+        padding: 0;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    .intro {
+        @include flexColumn;
+        padding: 176px 0 0 0;
+    }
+
+    .intro-iphone {
+        position: relative;
+        transform: translateX(-15%);
+        width: 350px;
+        height: 314px;
+        order: -1;
+    }
+
+    .photo-iphone {
+        width: 113px;
+        height: 200px;
+        top: 30px;
+        right: 41px;
+    }
+
+    .intro-desr {
+        max-width: 100%;
+        padding: 28px 20px 0 20px;
+        background: #283645;
+       
+        &-text {
+            margin: 0;
+            font-family: "Open Sans";
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+    }
+
+    .btn-download {
+        margin: 0 0 35px 0;
+    }
+
+    .attachment {
+        margin: 0 auto 30px;
+    }
+
+    .btn__link {
+        font-size: 1.125rem;
+    }
+}
+
 /***
 5. SCREEN 410px
 ***/
 @media screen and (max-width: 410px) {
+
+    .label-nav,
+    .label-nav--closed {
+        top: 37px;
+    }
     .container {
       width: 100%;
       padding: 0;
+    }
+
+    .form-content {
+        @include flexColumn;
+    }
+
+    .main-header {
+        padding: 0 20px;
+    }
+
+    .logo-header--bg {
+        background: url('../img/logotype-white-mobile.png') center center no-repeat;
+        background-size: cover;
+        width: 75px;
+        height: 22px;
+        position: relative;
+        z-index: 9999;
     }
 
     /***
@@ -534,9 +621,7 @@
     *
     ***/
 
-    fieldset {
-        border: none;
-    }
+   
 
     .form-preview {
         padding: 102px 0 53px 0;
@@ -559,54 +644,10 @@
     *5.2. INTRO
     *
     ***/
-
-    .intro {
-        @include flexColumn;
-        padding: 176px 0 0 0;
+    .intro-desr__title {
+        display: none;
     }
-
-    .intro-iphone {
-        position: relative;
-        transform: translateX(-15%);
-        width: 350px;
-        height: 314px;
-        order: -1;
-    }
-
-    .photo-iphone {
-        width: 111px;
-        height: 197px;
-        top: 32px;
-        right: 42px;
-    }
-
-    .intro-desr {
-        max-width: 100%;
-        padding: 28px 20px 0 20px;
-        background: #283645;
-        &__title {
-            display: none;
-        }
-        &-text {
-            margin: 0;
-            font-family: "Open Sans";
-            font-size: 0.875rem;
-            font-weight: 300;
-            line-height: 1.5rem;
-        }
-    }
-
-    .btn-download {
-        margin: 0 0 35px 0;
-    }
-
-    .attachment {
-        margin: 0 auto 30px;
-    }
-
-    .btn__link {
-        font-size: 1.125rem;
-    }
+    
 
     /***
     *
@@ -643,6 +684,7 @@
     .attachment-form {
         background: #f2f2f2;
         padding: 40px 0 45px 0;
+        
     }
     .input-attachment__wrap {
         padding: 40px 0 55px 20px;
@@ -659,6 +701,7 @@
     }
     .contacts {
         padding:0 20px;
+        order: -1;
     }
 
     .input-tel::before,
@@ -681,6 +724,7 @@
         background: #f2f2f2;
         padding: 40px 0 45px 0;
         margin: 0;
+        
     }
     .achievements {
         padding: 0 20px;

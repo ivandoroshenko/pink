@@ -2798,6 +2798,12 @@ body {
   .submit-button:active {
     color: rgba(255, 255, 255, 0.3); }
 
+.develop-link {
+  text-decoration: none;
+  color: #d22856; }
+  .develop-link:hover {
+    text-decoration: underline; }
+
 /***
 *
 * RADIO BUTTON
@@ -3053,6 +3059,7 @@ body {
 .label-nav,
 .label-nav--closed {
   font-size: 30px;
+  width: 15px;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -4507,7 +4514,7 @@ textarea {
     4.2. FOOTER HOME PAGE
     4.3. FOOTER FORM PAGE
 
-5. screen 410px
+5. screen 500px
 
 6. FORM HEADER
     6.1. INTRO
@@ -4701,8 +4708,6 @@ textarea {
     * 3.2 RESPONSIVE NAVIGATION
     *
     ***/
-  .main-header {
-    background: none; }
   .nav__item::before {
     height: 0; }
   .header-nav {
@@ -4754,6 +4759,9 @@ textarea {
     display: block; }
   .input-nav:checked ~ .main-header {
     display: none; }
+  .input-nav:checked ~ .drop-down__header {
+    background: #283645;
+    border-bottom: 1px solid #000; }
   /***
     *
     * 3.3. INTRO
@@ -4971,32 +4979,13 @@ textarea {
     margin-bottom: 42px; } }
 
 /***
-5. SCREEN 410px
+5. SCREEN 500px
 ***/
-@media screen and (max-width: 410px) {
-  .container {
-    width: 100%;
+@media screen and (max-width: 500px) {
+  .intro-conteiner {
     padding: 0; }
-  /***
-    *
-    *5.1. FORM HEADER
-    *
-    ***/
   fieldset {
     border: none; }
-  .form-preview {
-    padding: 102px 0 53px 0; }
-  .form-heder {
-    padding: 54px 0 49px 0; }
-  .dellete__text-heder {
-    display: none; }
-  .form-preview__title {
-    font-size: 1.5rem; }
-  /***
-    *
-    *5.2. INTRO
-    *
-    ***/
   .intro {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5028,16 +5017,14 @@ textarea {
     -ms-flex-order: -1;
     order: -1; }
   .photo-iphone {
-    width: 111px;
-    height: 197px;
-    top: 32px;
-    right: 42px; }
+    width: 113px;
+    height: 200px;
+    top: 30px;
+    right: 41px; }
   .intro-desr {
     max-width: 100%;
     padding: 28px 20px 0 20px;
     background: #283645; }
-    .intro-desr__title {
-      display: none; }
     .intro-desr-text {
       margin: 0;
       font-family: "Open Sans";
@@ -5049,7 +5036,65 @@ textarea {
   .attachment {
     margin: 0 auto 30px; }
   .btn__link {
-    font-size: 1.125rem; }
+    font-size: 1.125rem; } }
+
+/***
+5. SCREEN 410px
+***/
+@media screen and (max-width: 410px) {
+  .label-nav,
+  .label-nav--closed {
+    top: 37px; }
+  .container {
+    width: 100%;
+    padding: 0; }
+  .form-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .main-header {
+    padding: 0 20px; }
+  .logo-header--bg {
+    background: url("../img/logotype-white-mobile.png") center center no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 22px;
+    position: relative;
+    z-index: 9999; }
+  /***
+    *
+    *5.1. FORM HEADER
+    *
+    ***/
+  .form-preview {
+    padding: 102px 0 53px 0; }
+  .form-heder {
+    padding: 54px 0 49px 0; }
+  .dellete__text-heder {
+    display: none; }
+  .form-preview__title {
+    font-size: 1.5rem; }
+  /***
+    *
+    *5.2. INTRO
+    *
+    ***/
+  .intro-desr__title {
+    display: none; }
   /***
     *
     * 5.3. FORM PERSONAL
@@ -5105,7 +5150,11 @@ textarea {
   .dellete-legend {
     display: none; }
   .contacts {
-    padding: 0 20px; }
+    padding: 0 20px;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1; }
   .input-tel::before,
   .input-email::before {
     display: none; }
