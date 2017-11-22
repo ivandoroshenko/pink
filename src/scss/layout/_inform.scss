@@ -27,21 +27,23 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-
-    &:before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        left: 0;
-        bottom: 0;
-        top: 127px;
-        transform: skew(0deg, -4deg); 
-        background: #fff;
-        z-index: 1;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            left: 0;
+            bottom: 0;
+            top: 190px;
+            -webkit-transform: skew(0deg, -4deg);
+            -ms-transform: skew(0deg, -4deg);
+            transform: skew(0deg, -4deg);
+            background: #fff;
+            z-index: 99;
+        }
        
     }
-}
+
 
 
     .inform__title{

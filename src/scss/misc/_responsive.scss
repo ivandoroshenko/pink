@@ -105,10 +105,7 @@
 /***
 * 2.3. DIAGRAM
 ***/
-    .diagram{
-        position: relative;
-        z-index: 999;
-    }
+    
     .diagram__container{
         width: 700px;
         padding: 50px 40px;
@@ -345,7 +342,17 @@
         top: 53px;
         right: 118px;
     }
+    /***
+    * PRICE
+    ***/
 
+    td.price__cell{
+        span, svg{
+            display: inline-block;
+            vertical-align: middle;
+        
+        }
+}
     /***
     *
     * 3.4. ACHIVEMENTS FORM
@@ -756,14 +763,21 @@
 
     /* responsive for inform section in main page TABLET   */
     @media only screen and (max-width : 979px) {
-
+        .inform__desc{
+            &:before{
+                top: 115px;
+            }
+            .inform__text{
+                position: relative;
+                z-index: 100;    
+            }
+        }
         .container-inform{
             width: 620px;    
             display: flex;
             align-items: center;
                     
         }
-
         .telephones__item{
             position: relative;
             bottom: -22px;
@@ -846,8 +860,13 @@
           
         }
     }
-
-
+/***
+* DIAGRAM
+***/
+.diagram{
+        position: relative;
+        z-index: 999;
+    }
     /* responsive for inform section in main page MOBILE   */
     
     @media only screen and (max-width : 700px) {
