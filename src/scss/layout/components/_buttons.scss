@@ -44,3 +44,11 @@
         color: rgba(255, 255, 255, 0.3);
     }
 }
+
+.develop-link {
+    text-decoration: none;
+    color: $colorAccent;
+        &:hover {
+            text-decoration: underline;
+        }
+}

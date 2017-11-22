@@ -26,7 +26,7 @@
     4.2. FOOTER HOME PAGE
     4.3. FOOTER FORM PAGE
 
-5. screen 410px
+5. screen 500px
 
 6. FORM HEADER
     6.1. INTRO
@@ -36,13 +36,6 @@
     6.5. ACHIVEMENTS FORM
     6.6. EMOTION FORM
 
-7 responsive for photo page
-    7.1. photo page responsive tablet
-    7.2. photo__rewiew section responsive tablet
-    7.3. photo/customer__card section responsive tablet
-    7.4. photo/upload section responsive tablet
-    7.5. photoupload section responsive tablet
-    ***/
 /***=== 1. SCREEN 1102px ===***/
 
 @media screen and (max-width: 1102px) {
@@ -108,6 +101,109 @@
     .photo-iphone {
         right: 175px;
     }
+
+/***
+* 2.3. DIAGRAM
+***/
+    
+    .diagram__container{
+        width: 700px;
+        padding: 50px 40px;
+    }
+    .diagram__flex-container{
+        justify-content: space-between;
+    .column-left{
+        width: 240px;
+        background-size: 240px 280px;
+        flex-shrink: 0;
+    }
+    .column-right {
+        padding: 50px 0 80px 0;
+        margin-left: 70px / 700px * 100%;
+    }
+    .diagram__desc-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.875rem;
+        max-width: 177px;
+        line-height: 2.25rem;
+    }
+}
+    .about__desc-text{
+        max-width: 295px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    .about__desc--link{
+        display: block;
+        margin-top: 20px;
+        font-size: 0.875rem;
+    }
+    /***
+    * 2.4. TESTIMONIAL
+    ***/
+
+    .testimonial__container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 140px;
+    }
+    .testimonial__img{
+        display: none;
+    }
+    .testimonial__desc{
+        margin: 0 auto;
+    }
+
+    .testimonial__sub-title{
+        margin-top: 10px;
+    }
+}
+
+/***
+* 2.5. PRICE
+***/
+.price__container{
+    padding: 56px 0 70px;
+    td.price__name{
+    font-size: 0.875rem;
+}
+}
+
+.price__heading{
+    font-size: 1rem;
+    span{
+       font-size: 1.125rem;
+    }
+}
+
+/***
+*2.6. CONTACTS
+***/
+.contact-information{
+    width: 100%;
+}
+.contact__title{
+    margin-top: 55px;
+    font-size: 2.5rem;
+}
+.contact__list{
+    max-width: 700px;
+    justify-content: center;
+}
+
+.contact__item{
+    margin: 50px 40px;
+    width: 240px;
+}
+
+.contact__item--last{
+    order: 3;
+}
+.contact__item--data{
+    margin-top: 10px;
 }
 
 /***===
@@ -147,10 +243,7 @@
     *
     ***/
 
-    .main-header  {
-        background: none;
-    }
-
+  
     .nav__item::before {
         height: 0;
     }
@@ -212,6 +305,12 @@
             display: none;
         }
 
+        .input-nav:checked ~  .drop-down__header {
+            background: #283645;
+            border-bottom: 1px solid #000;
+        }
+        
+
     /***
     *
     * 3.3. INTRO
@@ -246,7 +345,17 @@
         top: 53px;
         right: 118px;
     }
+    /***
+    * PRICE
+    ***/
 
+    td.price__cell{
+        span, svg{
+            display: inline-block;
+            vertical-align: middle;
+        
+        }
+}
     /***
     *
     * 3.4. ACHIVEMENTS FORM
@@ -357,12 +466,20 @@
  ===***/
 
 @media screen and (max-width: 655px) {
+    
 
     .container {
       width: 100%;
       padding: 0 20px;
     }
 
+/***
+* DIAGRAM
+***/
+
+    .diagram__container{
+        width: 100%;
+    }
     .form-desc {
         width: 80%;
     }
@@ -371,6 +488,10 @@
         width: 90%;
         font-size: 2.5rem;
     }
+    /***
+    * PRICE
+    ***/
+    
 
     /***
     *
@@ -416,13 +537,118 @@
     }
 
 }
+
+/***
+5. SCREEN 500px
+***/
+
+@media screen and (max-width: 500px) {
+
+    .intro-conteiner {
+        padding: 0;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    .intro {
+        @include flexColumn;
+        padding: 176px 0 0 0;
+    }
+
+    .intro-iphone {
+        position: relative;
+        transform: translateX(-15%);
+        width: 350px;
+        height: 314px;
+        order: -1;
+    }
+
+    .photo-iphone {
+        width: 113px;
+        height: 200px;
+        top: 30px;
+        right: 41px;
+    }
+
+    .intro-desr {
+        max-width: 100%;
+        padding: 28px 20px 0 20px;
+        background: #283645;
+       
+        &-text {
+            margin: 0;
+            font-family: "Open Sans";
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+    }
+    /***
+    * PRICE
+    **/
+    .price__container{
+        width: 100%;
+        overflow: visible;
+    }
+    .price__table{
+        width: 1200px;
+        position: relative;
+        left: -150px;
+
+        th{
+            width: 43%;
+
+        }
+        .price__name{
+            visibility: hidden;
+            border-top-color: transparent;
+        
+        }
+    }
+    
+    .btn-download {
+        margin: 0 0 35px 0;
+    }
+
+    .attachment {
+        margin: 0 auto 30px;
+    }
+
+    .btn__link {
+        font-size: 1.125rem;
+    }
+}
+
 /***
 5. SCREEN 410px
 ***/
 @media screen and (max-width: 410px) {
+
+    .label-nav,
+    .label-nav--closed {
+        top: 37px;
+    }
     .container {
       width: 100%;
       padding: 0;
+    }
+
+    .form-content {
+        @include flexColumn;
+    }
+
+    .main-header {
+        padding: 0 20px;
+    }
+
+    .logo-header--bg {
+        background: url('../img/logotype-white-mobile.png') center center no-repeat;
+        background-size: cover;
+        width: 75px;
+        height: 22px;
+        position: relative;
+        z-index: 9999;
     }
 
     /***
@@ -431,9 +657,7 @@
     *
     ***/
 
-    fieldset {
-        border: none;
-    }
+   
 
     .form-preview {
         padding: 102px 0 53px 0;
@@ -456,54 +680,11 @@
     *5.2. INTRO
     *
     ***/
-
-    .intro {
-        @include flexColumn;
-        padding: 176px 0 0 0;
+    .intro-desr__title {
+        display: none;
     }
+    
 
-    .intro-iphone {
-        position: relative;
-        transform: translateX(-15%);
-        width: 350px;
-        height: 314px;
-        order: -1;
-    }
-
-    .photo-iphone {
-        width: 111px;
-        height: 197px;
-        top: 32px;
-        right: 42px;
-    }
-
-    .intro-desr {
-        max-width: 100%;
-        padding: 28px 20px 0 20px;
-        background: #283645;
-        &__title {
-            display: none;
-        }
-        &-text {
-            margin: 0;
-            font-family: "Open Sans";
-            font-size: 0.875rem;
-            font-weight: 300;
-            line-height: 1.5rem;
-        }
-    }
-
-    .btn-download {
-        margin: 0 0 35px 0;
-    }
-
-    .attachment {
-        margin: 0 auto 30px;
-    }
-
-    .btn__link {
-        font-size: 1.125rem;
-    }
 
     /***
     *
@@ -540,6 +721,7 @@
     .attachment-form {
         background: #f2f2f2;
         padding: 40px 0 45px 0;
+        
     }
     .input-attachment__wrap {
         padding: 40px 0 55px 20px;
@@ -556,6 +738,7 @@
     }
     .contacts {
         padding:0 20px;
+        order: -1;
     }
 
     .input-tel::before,
@@ -578,6 +761,7 @@
         background: #f2f2f2;
         padding: 40px 0 45px 0;
         margin: 0;
+        
     }
     .achievements {
         padding: 0 20px;
@@ -615,127 +799,168 @@
     }
 }
 
+ @media only screen and (max-width : 1200px) {
+        
+    }        
+  
+    /* responsive for inform section in main page   */
 
+    /* responsive for inform section in main page TABLET   */
+    @media only screen and (max-width : 979px) {
+        .inform__desc{
+            &:before{
+                top: 115px;
+            }
+            .inform__text{
+                position: relative;
+                z-index: 100;    
+            }
+        }
+        .container-inform{
+            width: 620px;    
+            display: flex;
+            align-items: center;
+                    
+        }
+        .telephones__item{
+            position: relative;
+            bottom: -22px;
+            &:nth-child(1){
+                display: none;
+            }
 
+            &:nth-child(2){
+                display: none;
+            }
+        }
 
+        .lists--wrap{
+            margin-top: 17px;
+        }
 
-/*
-7. responsive for photo page
- */
+        .telephones__list{
+            
+            margin: 45px 0 0 0;
+       
+           
+        }  
 
+        .inform__link{
+            text-align: left;
+        }
 
- /* 7.1.
-  photo page responsive tablet
- */
+        .inform__list{
+            flex-direction: column;
+        }
 
-@media screen and (max-width: 700px) {
+        .card__text{
+            width: 310px;
+            margin-top: 0px;                           
+            box-shadow: none;
+              
+        }
 
-  /* 7.2.
-  photo__panorama section responsive tablet
-   */
+        .card__title{
+            width: 100%;
+            padding-top: 0px;                
+            font-size: 1.125rem;
+            line-height: 0.625rem;
+        }
 
-    .photo__panorama-btn {
-        right: 100px;
+        .card__desc{
+            color: #283645;
+            font-size: 0.875rem;
+            width: 100%;
+            margin: 0; 
+            line-height: 1.5rem;
+        }
+
+        .inform__title, .inform__text{
+            font-size: 2.5rem;
+        }
+        .inform__list{
+            padding: 45px 45px;
+        }
+        .inform__item{
+            margin-top: 45px;
+        }
+
+    .card__desc{
+
+        margin-top: 20px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            max-width: 307px;
+        }
+
+        .card__image{
+            transform: scale(1.4);
+
+        }
+
+        .phone__image{
+            transform: scale(1.4);
+            left: 16%;
+          
+        }
+    }
+/***
+* DIAGRAM
+***/
+.diagram{
+        position: relative;
+        z-index: 999;
+    }
+    /* responsive for inform section in main page MOBILE   */
+    
+    @media only screen and (max-width : 700px) {
+         .container-inform{
+            width: 280px;    
+            display: flex;
+            flex-direction: column-reverse;
+                    
+        }
+
+        .inform__title{
+        text-align: center;
+        width: 280px;       
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 50px auto 0 auto;
+
     }
 
-    /*
-    7.4. photo__rewiew section responsive tablet
-    */
+    .inform__text{
+        text-align: center;
+        width: 280px;
+        margin: 0 auto;
+        font-size: 2rem;
+        font-weight: 300;
 
-    .rewiew{
-        width: 570px;
     }
 
-        .rewiew__name-and-date{
-            width: 440px;
+        .inform__list{
+            padding: 45px 0px;
+
         }
 
 
-    /*7.5. photo/customer__card section responsive tablet
-     */
-
-    .customers-cards__item{
-        margin-top: 30px;
-    }
-
-        .rewiew__customers-cards{
-            width: 232px;
-            padding: 30px 0 0 0;
+        .inform__item:first-child{
+            margin-top: 90px;
         }
 
-            .rewiew__name-and-date--customers-cards{
-                width: 100%;
-                margin: 0;
-            }
-
-            .rewiew__text-customers--cards{
-                margin: 12px 0 0 0;
-                line-height: 1.5rem;
-            }
-
-            .rewiew__like-customers--cards{
-                margin: 24px 0 0 0;
-            }
-
-
-    /* 7.6.
-    photo/upload section responsive tablet
-     */
-
-    .upload{
-        width: 100%;
-    }
-
-        .app--wrap{
-            align-items: flex-end;
+        .inform__link{
+            text-align: center;
+            width: 250px;
         }
 
-            .crop{
-                width: 285px;
-            }
 
-            .upload__icons{
-                width: 25px;
-                height: 25px;
-            }
-
-            .tools-for-picture{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-left: 45px;
-                }
-
-                .crop__slider{
-                    margin-left: 40px;
-                }
-
-            .buttons{
-                flex-direction: column;
-                margin-top: 70px;
-            }
-
-                .tools__btn{
-                    width: 260px;
-                }
-
-                    .tools__btn--opacity{
-                    margin-top: 25px;
-                }
-
-
-                .crop__slider[type=range] {
-                width: 200px;
-            }
-
-            .crop__slider[type=range]::-webkit-slider-thumb {
-                width: 12px;
-                height: 12px;
-            }
-}
+        .card__text{
+            width: 250px;
+        }
+    }
+  
 
 
 
-
-
-
+    

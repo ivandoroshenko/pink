@@ -7,6 +7,8 @@
     width:100%;
 }
 
+
+
     .container {
         @include container;
     }
@@ -87,6 +89,7 @@
 .label-nav,
 .label-nav--closed {
     font-size: 30px;
+    width: 15px;
     color: #fff;
     cursor: pointer;
     display: none;

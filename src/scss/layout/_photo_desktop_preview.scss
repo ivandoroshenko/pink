@@ -20,17 +20,18 @@
        
     }
     .photo__preview-title{
-    display: inline-block;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
-    max-width: 348px;
+    width: 320px;
     color: #fff;
     font-family: $defolt-fonts;
-    font-size: 3.125rem;
-    font-weight: 300;
-    
+    font-size: 2rem;
+    font-weight: 300;  
+    line-height: 1.5;  
     }
+
+  
 }
 
 /*
@@ -132,22 +133,54 @@
             text-transform: uppercase;
             font-weight: 400;
             margin: 0;
+            z-index: 999;
             
         }
             .input--like{
                 display: none;
+                z-index: 99;
             }
 
             .lable__input--like{
                 padding-left: 20px;
-            }
+                z-index: 99;
+            }   
 
-
-                .fa-heart-o{
-                    font-size: 14px;
-                    font-weight: 700;            
+                .favorite{
+                    stroke-width: 3px;
+                    stroke: $colorAccent;
+                    fill: #f2f2f2;
+                    transition: all .2s ease-in-out;
+                }
+                
+                .like__svg:active>.favorite{
+                    fill: $colorAccent;
                 }
 
+
+                .input--like1:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like2:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like3:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+
+                .input--like4:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like5:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like6:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+                .input--like7:checked + .lable__input--like > .like__svg>.favorite{
+                    fill: $colorAccent;
+                }
+           
         .rewiew__text{
             margin: 10px 0 0 0;
         }
@@ -275,6 +308,11 @@
                     height: 15px;
                     border: 2px solid $colorAccent;
                     background-color: #f2f2f2;
+                    transition: all .2s ease-in-out;
+
+                    &:hover{
+                        background-color: $colorAccent;
+                    }
                         
                 }
 
@@ -286,8 +324,9 @@
 
                 .tools__btn{
                     background: none;
+                    text-decoration: none;
                     border: 3px solid $colorAccent;
-                    border-radius: 50px;
+                    border-radius: 60px;
                     padding: 16px 40px;
                     width: 183px;
                     font-size: 1.125rem;
@@ -295,11 +334,35 @@
                     color: $colorAccent;
                     text-align: center;
                     cursor: pointer;
+                    outline: none;
+                    transition: all .2s ease-in-out;
+
+
+                    &:hover{
+                        background: $colorAccent;
+                        color: #fff;
+                    }
+
+                   /*  &:visited{
+                        color: rgba($color: #fff, $alpha: .3);
+                        background: $colorAccent;
+                    } */
                 }
 
                 .tools__btn--opacity{
                     border: 3px solid #dddfe0;                 
                     color: #dddfe0;
+
+                    &:hover{
+                        color: #b5b9be;
+                        border: 3px solid #b5b9be;
+                        background: none;
+                    }
+
+                    /* &:visited{
+                        color: rgba($color: #b5b9be, $alpha: .3);
+                        background: #dddfe0;
+                    } */
                 }
 
 
@@ -308,5 +371,13 @@
                     justify-content: center;
                     align-items: center;
                 }
+
+
+
+
+
+                
+                    
+
 
                 

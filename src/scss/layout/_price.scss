@@ -18,6 +18,9 @@
     @include container;
     padding: 56px 15px 95px 15px;
     
+    span{
+        display: block;
+    }
 .price__table{
     border: 2px solid #e5e5e5;
     width: 100%;
@@ -27,6 +30,7 @@
     z-index: 3;
     
    }
+   
 
 th{
     padding: 15px 0;
@@ -51,7 +55,6 @@ th{
 }
 
 th.hidden{
-    //display: none;
     border-top-color: transparent;
     border-left-color: transparent;
     background-color: transparent;
@@ -61,7 +64,6 @@ th.hidden{
     overflow: hidden;
 }
 .standart:after{
-    outline-offset: trapezoid;
     position: absolute;
     content: "хит";
     color: #fff;
@@ -79,16 +81,21 @@ th.hidden{
 td{
     width: 233px;
     background-color: #fff;
-}
+    }
 td.price__cell{
     border: 2px solid #e5e5e5;
     text-align: center;
     color: #283645;
-    font-family: $defolt-fonts;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.875rem;
-}
+
+    span{
+        font-size: 1.125rem;
+        display: none;
+    }
+        }
 td.price__name{
     padding-left: 24px;
     text-align: left;
