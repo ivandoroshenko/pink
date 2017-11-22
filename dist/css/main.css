@@ -2766,9 +2766,9 @@ body {
   font-size: 1.313rem;
   font-weight: 700;
   line-height: 1.125rem;
-  -webkit-transition: color .2s ease-in-out, background .2s ease-in-out;
-  -o-transition: color .2s ease-in-out, background .2s ease-in-out;
-  transition: color .2s ease-in-out, background .2s ease-in-out; }
+  -webkit-transition: color .2s ease-in-out, background .2s ease-in-out;
+  -o-transition: color .2s ease-in-out, background .2s ease-in-out;
+  transition: color .2s ease-in-out, background .2s ease-in-out; }
 
 .btn__link:hover {
   background: #fff;
@@ -4518,9 +4518,9 @@ textarea {
     display: block;
     padding: 25px 0;
     text-transform: uppercase;
-    -webkit-transition: border .2s ease-in-out, color .2s ease-in-out;
-    -o-transition: border .2s ease-in-out, color .2s ease-in-out;
-    transition: border .2s ease-in-out, color .2s ease-in-out; }
+    -webkit-transition: border .2s ease-in-out, color .2s ease-in-out;
+    -o-transition: border .2s ease-in-out, color .2s ease-in-out;
+    transition: border .2s ease-in-out, color .2s ease-in-out; }
   .input-nav:checked ~ .header-nav {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
