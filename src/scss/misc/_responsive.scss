@@ -1,66 +1,83 @@
-/*
- @media screen and (max-width: 1220px) {
-    .container {
-      width: 992px;
-    }
-} 
-@media screen and (max-width:1210px){
-    * {
-        width: 970px;
-    }
-    
-} 
-@media screen and (max-width:992px){
-    * {
-        width: 750px;
-    }
-}
+/***1. SCREEN 1102px
 
-@media screen and (max-width:768px){
-    * {
-        width: auto;
-    }
-}
-*/
+    1.1. HEADER NAVIGATION
+    1.2. FORM PAGE
 
-/***=== SCREEN 1102px ===***/
+2. SCREEN 890px
+
+    2.1. INTRO
+
+3. SCREEN 760px
+
+3.1  LOGO
+    3.2  RESPONSIVE NAVIGATION
+    3.3  INTRO
+    3.4  ACHIVEMENTS FORM
+    3.5  FOOTER
+    3.6  FORM PAGE
+    3.7  personal form
+    3.8  contacts form
+    3.9  ACHIVEMENTS FORM
+    3.10 SUBMIT FORM
+
+4. SCREEN 600px
+
+    4.1. SUBMIT FORM
+    4.2. FOOTER HOME PAGE
+    4.3. FOOTER FORM PAGE
+
+5. screen 410px
+
+6. FORM HEADER
+    6.1. INTRO
+    6.2. FORM PERSONAL
+    6.3. ATTACHMENT FORM
+    6.4. CONTACTS INFO
+    6.5. ACHIVEMENTS FORM
+    6.6. EMOTION FORM
+
+/***=== 1. SCREEN 1102px ===***/
 
 @media screen and (max-width: 1102px) {
-    
+
     .container {
         width: 720px;
     }
 
     /***
     *
-    * HEADER NAVIGATION
+    * 1.1. HEADER NAVIGATION
     *
     ***/
 
     .header-nav {
         width: 535px;
     }
-    
+
     .nav__item {
         position: relative;
         margin-right: 50px;
-        
+
         &:last-child {
             margin-right: 0px;
         }
     }
-
+   /***
+    *
+    * 1.2 FORM PAGE
+    *
+    ***/
     .form-preview__title {
         max-width: 650px;
     }
 
     .form-desc {
-        width:90%; 
+        width:90%;
     }
         .form__personal-info {
             @include flexColumn;
         }
-    
+
         .form-name,
         .attachment-form {
             width: 100%;
@@ -72,8 +89,11 @@
             margin: -23.5px 0;
         }
 }
-
+/***=== 2. SCREEN 890px ===***/
 @media screen and (max-width: 890px) {
+    /*
+    2.1. INTRO
+    */
     .intro-iphone {
         width: 900px;
     }
@@ -81,16 +101,123 @@
     .photo-iphone {
         right: 175px;
     }
+
+/***
+* 2.3. DIAGRAM
+***/
+    .diagram{
+        position: relative;
+        z-index: 999;
+    }
+    .diagram__container{
+        width: 700px;
+        padding: 50px 40px;
+    }
+    .diagram__flex-container{
+        justify-content: space-between;
+    .column-left{
+        width: 240px;
+        background-size: 240px 280px;
+        flex-shrink: 0;
+    }
+    .column-right {
+        padding: 50px 0 80px 0;
+        margin-left: 70px / 700px * 100%;
+    }
+    .diagram__desc-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.875rem;
+        max-width: 177px;
+        line-height: 2.25rem;
+    }
+}
+    .about__desc-text{
+        max-width: 295px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    .about__desc--link{
+        display: block;
+        margin-top: 20px;
+        font-size: 0.875rem;
+    }
+    /***
+    * 2.4. TESTIMONIAL
+    ***/
+
+    .testimonial__container{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 140px;
+    }
+    .testimonial__img{
+        display: none;
+    }
+    .testimonial__desc{
+        margin: 0 auto;
+    }
+
+    .testimonial__sub-title{
+        margin-top: 10px;
+    }
 }
 
-/***=== SCREEN 710px ===***/
+/***
+* 2.5. PRICE
+***/
+.price__container{
+    padding: 56px 0 70px;
+    td.price__name{
+    font-size: 0.875rem;
+}
+}
+
+.price__heading{
+    font-size: 1rem;
+    span{
+       font-size: 1.125rem;
+    }
+}
+
+/***
+*2.6. CONTACTS
+***/
+.contact-information{
+    width: 100%;
+}
+.contact__title{
+    margin-top: 55px;
+    font-size: 2.5rem;
+}
+.contact__list{
+    max-width: 700px;
+    justify-content: center;
+}
+
+.contact__item{
+    margin: 50px 40px;
+    width: 240px;
+}
+
+.contact__item--last{
+    order: 3;
+}
+.contact__item--data{
+    margin-top: 10px;
+}
+
+/***===
+3. SCREEN 760px
+===***/
 
 @media screen and (max-width: 760px) {
-    
+
     .container{
         width: 620px;
         padding: 0 15px;
-        
     }
 
     .label-nav {
@@ -98,7 +225,9 @@
         z-index: 104;
     }
 
-    /*logo*/
+    /*
+    3.1  LOGO
+    */
     .logo-header, .logo-footer{
             position: static;
         }
@@ -113,16 +242,14 @@
 
     /***
     *
-    * RESPONSIVE NAVIGATION
+    * 3.2 RESPONSIVE NAVIGATION
     *
     ***/
-
-    /*responsive nav*/
 
     .main-header  {
         background: none;
     }
-    
+
     .nav__item::before {
         height: 0;
     }
@@ -141,7 +268,7 @@
 
     .nav__list {
         flex-direction: column;
-        
+
     }
 
     .nav__item {
@@ -150,7 +277,7 @@
         width: 100%;
         margin: 0;
         text-align: center;
-        
+
     }
 
     .nav__item:hover {
@@ -160,7 +287,7 @@
     }
 
     .nav__link {
-        
+
         display: block;
         padding: 25px 0;
         text-transform: uppercase;
@@ -186,12 +313,12 @@
 
     /***
     *
-    * INTRO
+    * 3.3. INTRO
     *
-    ***/   
+    ***/
 
     .intro {
-        padding: 213px 0 110px 0; 
+        padding: 213px 0 110px 0;
     }
 
     .intro-desr__title {
@@ -221,7 +348,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.4. ACHIVEMENTS FORM
     *
     ***/
 
@@ -242,7 +369,7 @@
 
     /***
     *
-    * FOOTER
+    * 3.5. FOOTER
     *
     ***/
 
@@ -252,7 +379,7 @@
 
     /***
     *
-    * FORM PAGE
+    * 3.6 FORM PAGE
     *
     ***/
 
@@ -264,8 +391,10 @@
         width: 490px;
     }
 
-    /*personal form*/
-    
+    /*
+    3.7. personal form
+    */
+
     .form__personal-info {
         @include flexColumn;
     }
@@ -277,7 +406,9 @@
         margin-bottom: 60px;
     }
 
-    /*contacts form*/
+    /*
+    3.8. contacts form
+    */
 
     .contacts, {
         @include flexColumn;
@@ -299,7 +430,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 3.9. ACHIVEMENTS FORM
     *
     ***/
 
@@ -310,17 +441,19 @@
 
     /***
     *
-    * SUBMIT FORM
+    * 3.10 SUBMIT FORM
     *
     ****/
 
     .delete-text {
         display: none;
     }
-    
+
 }
 
-/***=== SCREEN 600px ===***/
+/***===
+4. SCREEN 600px
+ ===***/
 
 @media screen and (max-width: 655px) {
 
@@ -328,7 +461,14 @@
       width: 100%;
       padding: 0 20px;
     }
-      
+
+/***
+* DIAGRAM
+***/
+
+    .diagram__container{
+        width: 100%;
+    }
     .form-desc {
         width: 80%;
     }
@@ -337,10 +477,14 @@
         width: 90%;
         font-size: 2.5rem;
     }
+    /***
+    * PRICE
+    ***/
+    
 
     /***
     *
-    * SUBMIT FORM
+    * 4.1. SUBMIT FORM
     *
     ****/
 
@@ -350,7 +494,7 @@
 
     /****
     *
-    * FOOTER HOM PAGE
+    * 4.2. FOOTER HOME PAGE
     *
     ***/
 
@@ -358,13 +502,13 @@
         display: none;
     }
 
-    .btn-sibmit {
+        .btn-sibmit {
         margin-bottom: 46px;
     }
 
     /***
     *
-    * FOOTER FORM PAGE
+    * 4.3. FOOTER FORM PAGE
     *
     ***/
 
@@ -382,7 +526,9 @@
     }
 
 }
-
+/***
+5. SCREEN 410px
+***/
 @media screen and (max-width: 410px) {
     .container {
       width: 100%;
@@ -391,7 +537,7 @@
 
     /***
     *
-    * FORM HEADER
+    *5.1. FORM HEADER
     *
     ***/
 
@@ -400,11 +546,11 @@
     }
 
     .form-preview {
-        padding: 102px 0 53px 0; 
+        padding: 102px 0 53px 0;
     }
 
     .form-heder {
-        padding: 54px 0 49px 0; 
+        padding: 54px 0 49px 0;
     }
 
     .dellete__text-heder {
@@ -417,7 +563,7 @@
 
     /***
     *
-    * INTRO
+    *5.2. INTRO
     *
     ***/
 
@@ -455,7 +601,30 @@
             font-weight: 300;
             line-height: 1.5rem;
         }
+    }
+    /***
+    * PRICE
+    **/
+    .price__container{
+        width: 100%;
+        overflow: visible;
+    }
+    .price__table{
+        width: 1200px;
+        position: relative;
+        left: -150px;
 
+        th{
+            width: 43%;
+
+        }
+        .price__name{
+            visibility: hidden;
+            border-top-color: transparent;
+        
+        }
+    }
+    
     .btn-download {
         margin: 0 0 35px 0;
     }
@@ -463,23 +632,24 @@
     .attachment {
         margin: 0 auto 30px;
     }
-    
+
     .btn__link {
         font-size: 1.125rem;
     }
 
+
     /***
     *
-    * FORM PERSONAL
+    * 5.3. FORM PERSONAL
     *
     ***/
 
     .name,
     .fullname,
     .middlename {
-        @include flexColumn; 
+        @include flexColumn;
         align-items: stretch;
-        width: 100%; 
+        width: 100%;
     }
 
     .form-name {
@@ -491,12 +661,12 @@
     }
 
     .fullname-label {
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     /***
     *
-    * ATTACHMENT FORM
+    * 5.4. ATTACHMENT FORM
     *
     ***/
 
@@ -510,12 +680,12 @@
 
     /***
     *
-    * CONTACTS INFO
+    * 5.5. CONTACTS INFO
     *
     ***/
 
     .dellete-legend {
-        display:none; 
+        display:none;
     }
     .contacts {
         padding:0 20px;
@@ -533,7 +703,7 @@
 
     /***
     *
-    * ACHIVEMENTS FORM
+    * 5.6. ACHIVEMENTS FORM
     *
     ***/
 
@@ -545,11 +715,11 @@
     .achievements {
         padding: 0 20px;
     }
-    
+
 
     /***
     *
-    * EMOTION FORM
+    * 5.7. EMOTION FORM
     *
     ***/
 
@@ -577,116 +747,157 @@
         padding: 22.5px 45px;
     }
 }
-}
 
+ @media only screen and (max-width : 1200px) {
+        
+    }        
+  
+    /* responsive for inform section in main page   */
 
+    /* responsive for inform section in main page TABLET   */
+    @media only screen and (max-width : 979px) {
 
-
-/* responsive for photo page */
-
-
- /* photo page responsive tablet */
-
-@media screen and (max-width: 700px) {
-
-    /* photo__panorama section responsive tablet */
-
-    .photo__panorama-btn {
-        right: 100px; 
-    }
-
-    /* photo__rewiew section responsive tablet */
-
-    .rewiew{       
-        width: 570px; 
-    }
-
-        .rewiew__name-and-date{
-            width: 440px;
-        }
-
-
-    /* photo/customer__card section responsive tablet */
-
-    .customers-cards__item{
-        margin-top: 30px;
-    }
-
-        .rewiew__customers-cards{
-            width: 232px; 
-            padding: 30px 0 0 0;                     
-        }
-
-            .rewiew__name-and-date--customers-cards{
-                width: 100%;
-                margin: 0;
-            }
-
-            .rewiew__text-customers--cards{
-                margin: 12px 0 0 0;
-                line-height: 1.5rem;
-            }
-
-            .rewiew__like-customers--cards{
-                margin: 24px 0 0 0;
-            }
-
-
-    /* photo/upload section responsive tablet */            
+        .container-inform{
+            width: 620px;    
+            display: flex;
+            align-items: center;
                     
-    .upload{
-        width: 100%;
+        }
+
+        .telephones__item{
+            position: relative;
+            bottom: -22px;
+            &:nth-child(1){
+                display: none;
+            }
+
+            &:nth-child(2){
+                display: none;
+            }
+        }
+
+        .lists--wrap{
+            margin-top: 17px;
+        }
+
+        .telephones__list{
+            
+            margin: 45px 0 0 0;
+       
+           
+        }  
+
+        .inform__link{
+            text-align: left;
+        }
+
+        .inform__list{
+            flex-direction: column;
+        }
+
+        .card__text{
+            width: 310px;
+            margin-top: 0px;                           
+            box-shadow: none;
+              
+        }
+
+        .card__title{
+            width: 100%;
+            padding-top: 0px;                
+            font-size: 1.125rem;
+            line-height: 0.625rem;
+        }
+
+        .card__desc{
+            color: #283645;
+            font-size: 0.875rem;
+            width: 100%;
+            margin: 0; 
+            line-height: 1.5rem;
+        }
+
+        .inform__title, .inform__text{
+            font-size: 2.5rem;
+        }
+        .inform__list{
+            padding: 45px 45px;
+        }
+        .inform__item{
+            margin-top: 45px;
+        }
+
+    .card__desc{
+
+        margin-top: 20px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            max-width: 307px;
+        }
+
+        .card__image{
+            transform: scale(1.4);
+
+        }
+
+        .phone__image{
+            transform: scale(1.4);
+            left: 16%;
+          
+        }
     }
 
-        .app--wrap{
-            align-items: flex-end;
-        }
+
+    /* responsive for inform section in main page MOBILE   */
     
-            .crop{                
-                width: 285px;               
-            }
+    @media only screen and (max-width : 700px) {
+         .container-inform{
+            width: 280px;    
+            display: flex;
+            flex-direction: column-reverse;
+                    
+        }
 
-            .upload__icons{
-                width: 25px;
-                height: 25px;       
-            }
+        .inform__title{
+        text-align: center;
+        width: 280px;       
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 50px auto 0 auto;
 
-            .tools-for-picture{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-left: 45px;
-                }
+    }
 
-                .crop__slider{
-                    margin-left: 40px;
-                }
+    .inform__text{
+        text-align: center;
+        width: 280px;
+        margin: 0 auto;
+        font-size: 2rem;
+        font-weight: 300;
 
-            .buttons{                    
-                flex-direction: column;
-                margin-top: 70px;
-            }    
+    }
 
-                .tools__btn{                      
-                    width: 260px;                        
-                }
+        .inform__list{
+            padding: 45px 0px;
 
-                    .tools__btn--opacity{
-                    margin-top: 25px;
-                }
+        }
 
 
-                .crop__slider[type=range] {                    
-                width: 200px;                    
-            } 
+        .inform__item:first-child{
+            margin-top: 90px;
+        }
 
-            .crop__slider[type='range']::-webkit-slider-thumb {
-                width: 12px;
-                height: 12px;
-                
-            }
+        .inform__link{
+            text-align: center;
+            width: 250px;
+        }
 
 
-          
-}
+        .card__text{
+            width: 250px;
+        }
+    }
+  
+
+
+
     
