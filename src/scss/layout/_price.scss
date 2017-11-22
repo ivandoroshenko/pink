@@ -18,6 +18,9 @@
     @include container;
     padding: 56px 15px 95px 15px;
     
+    span{
+        display: block;
+    }
 .price__table{
     border: 2px solid #e5e5e5;
     width: 100%;
@@ -27,6 +30,7 @@
     z-index: 3;
     
    }
+   
 
 th{
     padding: 15px 0;
