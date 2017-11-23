@@ -536,11 +536,13 @@
     * PRICE 655px
     **/
     .price__container{
+        position: relative;
         width: 100%;
         overflow: visible;
+        padding: 0;
         }
 
-    price__table{
+    .price__table{
                 width: 1200px;
                 position: relative;
                 // left: -95%;
@@ -551,21 +553,26 @@
         display: none;
     }
 
+    th.price__heading:after{
+    line-height: 1.5rem;
+    top: 5px;
+    left: -45p;
+    }
+
     td {
         width: 400px;
-        text-align: justify;
+        text-align: center;
+        font-size: 0;
         }
 
        td.price__cell span{
-        display: inline-block;
+        display: block;
         text-transform: uppercase;
-        margin-left: 20px;
         }
 
         td.price__cell svg{
-        text-align: right;
+
         }
-        .
 
         }
 
@@ -1060,11 +1067,7 @@
 
 
 @media screen and (max-width: 410px) {
-/***
-    *
-    * PRICE (410)
-    *
-    ***/
+
 .inform__title{
         margin-top: 40px;
         font-size: 1.5rem;
