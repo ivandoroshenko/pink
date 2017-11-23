@@ -105,7 +105,7 @@
 /***
 * 2.3. DIAGRAM
 ***/
-    
+
     .diagram__container{
         width: 700px;
         padding: 50px 40px;
@@ -243,7 +243,7 @@
     *
     ***/
 
-  
+
     .nav__item::before {
         height: 0;
     }
@@ -309,7 +309,7 @@
             background: #283645;
             border-bottom: 1px solid #000;
         }
-        
+
 
     /***
     *
@@ -346,14 +346,19 @@
         right: 118px;
     }
     /***
-    * PRICE
+    * PRICE (760px)
     ***/
+    .price__container{
+        margin: 0 auto;
+        padding: 0;
+
+    }
 
     td.price__cell{
         span,svg{
             display: inline-block;
             vertical-align: middle;
-        
+
         }
 }
     /***
@@ -462,11 +467,11 @@
 }
 
 /***===
-4. SCREEN 600px
+4. SCREEN 600px===============================
  ===***/
 
 @media screen and (max-width: 655px) {
-    
+
 
     .container {
       width: 100%;
@@ -477,9 +482,9 @@
 * DIAGRAM
 ***/
 
-    .diagram__container{
-        width: 100%;
-    }
+   .diagram{
+       display: none;
+   }
     .form-desc {
         width: 80%;
     }
@@ -488,11 +493,110 @@
         width: 90%;
         font-size: 2.5rem;
     }
-    /***
-    * PRICE
-    ***/
-    
 
+     /***
+    * 2.4. TESTIMONIAL
+    ***/
+    .testimonial{
+        positin: relative;
+        z-index: 9999;
+    }
+
+    .testimonial__container{
+        padding-top: 45px;
+    }
+
+    .testimonial__desc{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .testimonial___img{
+        display: none;
+    }
+
+    .testimonial__title{
+        font-size: 18px;
+    }
+
+    .testimonial__sub-title{
+        display: none;
+    }
+
+    .testimonial__text{
+        font-size: 14px;
+        margin: 20px auto 0;
+        line-height: 1.875rem;
+        max-width: 276px;
+
+    }
+
+ /***
+    * PRICE 655px
+    **/
+    .price__container{
+        width: 100%;
+        overflow: visible;
+        }
+
+    price__table{
+                width: 1200px;
+                position: relative;
+                // left: -95%;
+    td.price__name{
+            display: none;
+    }
+    th.hidden{
+        display: none;
+    }
+
+    td {
+        width: 400px;
+        text-align: justify;
+        }
+
+       td.price__cell span{
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: 20px;
+        }
+
+        td.price__cell svg{
+        text-align: right;
+        }
+        .
+
+        }
+
+    /***
+    * CONTACTS
+    ***/
+
+    .contact__title{
+        font-size: 1.5rem;
+        max-width: 222px;
+        line-height: 2rem;
+    }
+
+    .contact__list{
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__item{
+        margin: 25px 0 0 0;
+    }
+
+    iframe{
+        height: 400px;
+    }
+    .iframe-overlay{
+        height: 400px;
+        top: 400px;
+        margin-top: -400px;
+    }
     /***
     *
     * 4.1. SUBMIT FORM
@@ -531,10 +635,10 @@
         @include flexColumn;
     }
 
-    .logo-footer--bg,
-    .social__list {
+    .logo-footer--bg, .social__list{
         margin-bottom: 42px;
     }
+
 
 }
 
@@ -547,7 +651,7 @@
     .intro-conteiner {
         padding: 0;
     }
-    
+
     fieldset {
         border: none;
     }
@@ -575,7 +679,7 @@
         max-width: 100%;
         padding: 28px 20px 0 20px;
         background: #283645;
-       
+
         &-text {
             margin: 0;
             font-family: "Open Sans";
@@ -584,29 +688,8 @@
             line-height: 1.5rem;
         }
     }
-    /***
-    * PRICE
-    **/
-    .price__container{
-        width: 100%;
-        overflow: visible;
-    }
-    .price__table{
-        width: 1200px;
-        position: relative;
-        left: -150px;
 
-        th{
-            width: 43%;
 
-        }
-        .price__name{
-            visibility: hidden;
-            border-top-color: transparent;
-        
-        }
-    }
-    
     .btn-download {
         margin: 0 0 35px 0;
     }
@@ -652,7 +735,7 @@
     }
 /***
     *
-    * PRICE
+    * INFORM
     *
     ***/
     .inform__title{
@@ -664,7 +747,7 @@
         margin-top: 40px;
         font-size: 1.5rem;
     }
-    
+
 
     /***
     *
@@ -672,7 +755,7 @@
     *
     ***/
 
-   
+
 
     .form-preview {
         padding: 102px 0 53px 0;
@@ -698,7 +781,7 @@
     .intro-desr__title {
         display: none;
     }
-    
+
 
 
     /***
@@ -736,7 +819,7 @@
     .attachment-form {
         background: #f2f2f2;
         padding: 40px 0 45px 0;
-        
+
     }
     .input-attachment__wrap {
         padding: 40px 0 55px 20px;
@@ -776,7 +859,7 @@
         background: #f2f2f2;
         padding: 40px 0 45px 0;
         margin: 0;
-        
+
     }
     .achievements {
         padding: 0 20px;
@@ -815,9 +898,9 @@
 }
 
  @media only screen and (max-width : 1200px) {
-        
-    }        
-  
+
+    }
+
     /* responsive for inform section in main page   */
 
     /* responsive for inform section in main page TABLET   */
@@ -828,14 +911,14 @@
             }
             .inform__text{
                 position: relative;
-                z-index: 100;    
+                z-index: 100;
             }
         }
         .container-inform{
-            width: 620px;    
+            width: 620px;
             display: flex;
             align-items: center;
-                    
+
         }
         .telephones__item{
             position: relative;
@@ -854,11 +937,11 @@
         }
 
         .telephones__list{
-            
+
             margin: 45px 0 0 0;
-       
-           
-        }  
+
+
+        }
 
         .inform__link{
             text-align: left;
@@ -870,14 +953,14 @@
 
         .card__text{
             width: 310px;
-            margin-top: 0px;                           
+            margin-top: 0px;
             box-shadow: none;
-              
+
         }
 
         .card__title{
             width: 100%;
-            padding-top: 0px;                
+            padding-top: 0px;
             font-size: 1.125rem;
             line-height: 0.625rem;
         }
@@ -886,7 +969,7 @@
             color: #283645;
             font-size: 0.875rem;
             width: 100%;
-            margin: 0; 
+            margin: 0;
             line-height: 1.5rem;
         }
 
@@ -916,7 +999,7 @@
         .phone__image{
             transform: scale(1.4);
             left: 16%;
-          
+
         }
     }
 /***
@@ -927,18 +1010,18 @@
         z-index: 999;
     }
     /* responsive for inform section in main page MOBILE   */
-    
+
     @media only screen and (max-width : 700px) {
          .container-inform{
-            width: 280px;    
+            width: 280px;
             display: flex;
             flex-direction: column-reverse;
-                    
+
         }
 
         .inform__title{
         text-align: center;
-        width: 280px;       
+        width: 280px;
         font-size: 2rem;
         font-weight: 300;
         margin: 50px auto 0 auto;
@@ -974,8 +1057,23 @@
             width: 250px;
         }
     }
-  
 
 
+@media screen and (max-width: 410px) {
+/***
+    *
+    * PRICE (410)
+    *
+    ***/
+.inform__title{
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
 
-    
+    .inform__text{
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+    }
+
+
