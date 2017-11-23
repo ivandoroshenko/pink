@@ -4870,7 +4870,7 @@ textarea {
   .price__container {
     position: relative;
     width: 100%;
-    overflow: visible;
+    overflow: auto;
     padding: 0; }
   .price__table {
     width: 1200px;
@@ -5091,6 +5091,8 @@ textarea {
   .price__table {
     width: 100%;
     font-size: 0.875rem; }
+  td.price__cell {
+    min-width: 320px; }
   td.price__cell span {
     font-size: 0.875rem; }
   /***
