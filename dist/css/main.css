@@ -4873,7 +4873,6 @@ textarea {
     overflow: auto;
     padding: 0; }
   .price__table {
-    width: 1200px;
     position: relative; }
     .price__table td.price__name {
       display: none; }
@@ -4885,11 +4884,13 @@ textarea {
       left: -45px; }
     .price__table td {
       width: 400px;
-      text-align: center;
+      text-align: right;
       font-size: 0; }
     .price__table td.price__cell span {
-      display: block;
+      display: inline-block;
       text-transform: uppercase; }
+    .price__table td.price__cell svg {
+      display: inline-block; }
   /***
     * CONTACTS
     ***/
@@ -5094,7 +5095,10 @@ textarea {
   td.price__cell {
     min-width: 320px; }
   td.price__cell span {
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    display: inline-block; }
+  td.price__cell svg {
+    display: inline-block; }
   /***
     *
     *5.1. FORM HEADER
