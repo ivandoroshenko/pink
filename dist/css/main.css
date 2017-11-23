@@ -5006,6 +5006,17 @@ textarea {
     z-index: 9999; }
   /***
     *
+    * PRICE
+    *
+    ***/
+  .inform__title {
+    margin-top: 40px;
+    font-size: 1.5rem; }
+  .inform__text {
+    margin-top: 40px;
+    font-size: 1.5rem; }
+  /***
+    *
     *5.1. FORM HEADER
     *
     ***/
