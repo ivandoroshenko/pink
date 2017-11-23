@@ -350,7 +350,7 @@
     ***/
 
     td.price__cell{
-        span, svg{
+        span,svg{
             display: inline-block;
             vertical-align: middle;
         
@@ -650,6 +650,21 @@
         position: relative;
         z-index: 9999;
     }
+/***
+    *
+    * PRICE
+    *
+    ***/
+    .inform__title{
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+
+    .inform__text{
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+    
 
     /***
     *
