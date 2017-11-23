@@ -2766,12 +2766,9 @@ body {
   font-size: 1.313rem;
   font-weight: 700;
   line-height: 1.125rem;
-  -webkit-transition: color .2s ease-in-out,
- background .2s ease-in-out;
-  -o-transition: color .2s ease-in-out,
- background .2s ease-in-out;
-  transition: color .2s ease-in-out,
- background .2s ease-in-out; }
+  -webkit-transition: color .2s ease-in-out, background .2s ease-in-out;
+  -o-transition: color .2s ease-in-out, background .2s ease-in-out;
+  transition: color .2s ease-in-out, background .2s ease-in-out; }
 
 .btn__link:hover {
   background: #fff;
@@ -4649,12 +4646,9 @@ textarea {
     display: block;
     padding: 25px 0;
     text-transform: uppercase;
-    -webkit-transition: border .2s ease-in-out,
- color .2s ease-in-out;
-    -o-transition: border .2s ease-in-out,
- color .2s ease-in-out;
-    transition: border .2s ease-in-out,
- color .2s ease-in-out; }
+    -webkit-transition: border .2s ease-in-out, color .2s ease-in-out;
+    -o-transition: border .2s ease-in-out, color .2s ease-in-out;
+    transition: border .2s ease-in-out, color .2s ease-in-out; }
   .input-nav:checked ~ .header-nav {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -4841,7 +4835,7 @@ textarea {
     * 2.4. TESTIMONIAL
     ***/
   .testimonial {
-    positin: relative;
+    position: relative;
     z-index: 9999; }
   .testimonial__container {
     padding-top: 45px; }
@@ -4888,7 +4882,7 @@ textarea {
     .price__table th.price__heading:after {
       line-height: 1.5rem;
       top: 5px;
-      left: -45p; }
+      left: -45px; }
     .price__table td {
       width: 400px;
       text-align: center;
