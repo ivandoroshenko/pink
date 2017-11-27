@@ -3296,13 +3296,14 @@ body {
   width: 100%; }
 
 .diagram {
-  background: #fff; }
+  background: #f2f2f2; }
 
 .diagram__container {
   max-width: 940px;
   padding: 0 15px;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #f2f2f2; }
 
 .diagram__flex-container {
   display: -webkit-box;

@@ -6,7 +6,7 @@
  	width: 100%;
  }
  .diagram {
-	 background: #fff;
+	 background: $inform-section-bg;
 	 
  }
  .diagram__container {
@@ -14,6 +14,7 @@
 	padding: 0 15px;
 	position: relative;
 	margin: 0 auto;
+	background: $inform-section-bg;
 }
 .diagram__flex-container {
 	display: flex;
